@@ -1,0 +1,37 @@
+.menu div {
+  text-align: center; }
+  .menu div a {
+    padding: 10% 40%;
+    text-align: center;
+    width: 40%;
+    text-transform: uppercase; }
+    .menu div a:hover {
+      text-decoration: none; }
+    .menu div a.fight {
+      color: #ff827c;
+      border: 3px solid #ff827c; }
+      .menu div a.fight:hover {
+        background: #ff827c;
+        color: #FFF;
+        transition: all .3s; }
+    .menu div a.unbox {
+      color: #ff82e8;
+      border: 3px solid #ff82e8; }
+      .menu div a.unbox:hover {
+        background: #ff82e8;
+        color: #FFF;
+        transition: all .3s; }
+    .menu div a.market {
+      color: #44e293;
+      border: 3px solid #44e293; }
+      .menu div a.market:hover {
+        background: #44e293;
+        color: #FFF;
+        transition: all .3s; }
+    .menu div a.withdraw {
+      color: #f7bd55;
+      border: 3px solid #f7bd55; }
+      .menu div a.withdraw:hover {
+        background: #f7bd55;
+        color: #FFF;
+        transition: all .3s; }

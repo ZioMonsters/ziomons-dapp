@@ -1,0 +1,22 @@
+@import "../variables";
+
+.last-clashes {
+  // todo forse? ovviamente cambio colore
+  border-right: 1px solid $primary-color;
+
+  .row {
+    padding: 15px;
+  }
+
+  .rect {
+    float: left;
+    width: 100%;
+    background-color: $primary-color;
+  }
+
+  .rect:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+}

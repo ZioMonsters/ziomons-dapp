@@ -1,0 +1,55 @@
+@import "../variables";
+
+.menu {
+  div {
+    text-align: center;
+
+    a {
+      padding: 10% 40%;
+      //border-radius: 10px;
+      text-align: center;
+      width: 40%;
+      text-transform: uppercase;
+      &:hover {
+        text-decoration: none;
+      }
+
+      &.fight {
+        &:hover {
+          background: $fight-color;
+          color: #FFF;
+          transition: all .3s;
+        }
+        color: $fight-color;
+        border: 3px solid $fight-color;
+      }
+      &.unbox {
+        &:hover {
+          background: $unbox-color;
+          color: #FFF;
+          transition: all .3s;
+        }
+        color: $unbox-color;
+        border: 3px solid $unbox-color;
+      }
+      &.market {
+        &:hover {
+          background: $market-color;
+          color: #FFF;
+          transition: all .3s;
+        }
+        color: $market-color;
+        border: 3px solid $market-color;
+      }
+      &.withdraw {
+        &:hover {
+          background: $withdraw-color;
+          color: #FFF;
+          transition: all .3s;
+        }
+        color: $withdraw-color;
+        border: 3px solid $withdraw-color;
+      }
+    }
+  }
+}

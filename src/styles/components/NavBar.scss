@@ -1,0 +1,59 @@
+@import "../variables";
+
+.navbar {
+  height: 75px;
+  border-radius: 0;
+  border: none;
+  background-color: $primary-color;
+
+  &.unbox {
+    transition: all 1s;
+    background-color: $unbox-color;
+  }
+  &.fight {
+    transition: all 1s;
+    background-color: $fight-color;
+  }
+  &.market {
+    transition: all 1s;
+    background-color: $market-color;
+  }
+  &.withdraw {
+    transition: all 1s;
+    background-color: $withdraw-color;
+  }
+
+  span, a {
+    color: #FFF !important;
+  }
+
+  .user-info {
+    a {
+      cursor: default;
+    }
+    span {
+      display: block;
+    }
+  }
+
+  .navbar-header {
+    object {
+      height: 50px;
+      width: auto;
+    }
+  }
+
+  .dropdown {
+    height: 75px;
+
+    a {
+      height: 100%;
+    }
+
+    .dropdown-menu {
+      border-radius: 0;
+      min-height: 300px;
+      min-width: 250px;
+    }
+  }
+}

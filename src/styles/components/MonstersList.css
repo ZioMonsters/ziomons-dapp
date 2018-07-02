@@ -1,0 +1,12 @@
+.monsters-list .row {
+  padding: 15px; }
+
+.monsters-list .rect {
+  float: left;
+  width: 100%;
+  background-color: #4a96cd; }
+
+.monsters-list .rect:before {
+  content: "";
+  display: block;
+  padding-top: 100%; }

@@ -1,0 +1,41 @@
+.transition-group {
+  position: relative;
+
+  .page-enter {
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      content: " ";
+      width: 100%;
+      height: 100vh;
+      background: #FFF;
+      animation-name: fadeOut;
+      animation-duration: 500ms;
+      animation-delay: 0s;
+      animation-timing-function: ease-out;
+      animation-fill-mode: forwards;
+    }
+
+  }
+
+  .page-exit {
+    opacity: 1;
+    transition: opacity 1000ms;
+
+    &.page-exit-active {
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

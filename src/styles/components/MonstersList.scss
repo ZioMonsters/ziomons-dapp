@@ -1,0 +1,19 @@
+@import "../variables";
+
+.monsters-list {
+  .row {
+    padding: 15px;
+  }
+
+  .rect {
+    float: left;
+    width: 100%;
+    background-color: $primary-color;
+  }
+
+  .rect:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+}

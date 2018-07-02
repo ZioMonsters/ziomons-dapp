@@ -1,22 +1,45 @@
 import React, { Component } from "react"
 import { drizzleConnect } from "drizzle-react"
 import NavBar from "../components/NavBar"
+import { Switch, withRouter } from "react-router-dom"
+import Routes from "./Routes.js"
+import { CSSTransition, TransitionGroup } from "react-transition-group"
+import v4 from "uuid/v4"
 
 class App extends Component {
   render() {
-    console.log("props", this.props)
     return (
-      <div className="App">
-        <NavBar />
-      </div>
+      //<TransitionGroup className={"transition-group"}>
+      //  <CSSTransition
+      //    // key={routeKey}
+      //    key = { v4() }
+      //    timeout={{ enter: 1000, exit: 1000 }}
+      //    classNames={"page"}
+      //    mountOnEnter={true}
+      //    unmountOnExit={true}
+      //  >
+          <div className="App">
+            {
+              this.props.isLoaded && [
+                <NavBar />,
+                <div className = { "content" }>
+                  <Switch>
+                    <Routes />
+                  </Switch>
+                </div>
+              ]
+            }
+          </div>
+      //   </CSSTransition>
+      // </TransitionGroup>
     )
   }
 }
 
 const mapStateToProps = state => {
   return {
-    state
+    isLoaded: state.drizzleStatus.initialized
   }
 }
 
-export default drizzleConnect(App, mapStateToProps)
+export default withRouter(drizzleConnect(App, mapStateToProps))

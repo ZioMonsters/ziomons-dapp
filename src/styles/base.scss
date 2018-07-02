@@ -1,6 +1,19 @@
-$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
-@import 'variables';
-@import 'mixins';
+$icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+@import "variables";
+@import "mixins";
 
-@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "./containers/User.scss";
+@import "./containers/App.scss";
+@import "./components/NavBar.scss";
+@import "./components/Menu.scss";
+@import "./components/LastClashes.scss";
+@import "./components/MonstersList.scss";
+@import "./containers/Unbox.scss";
+
+.content {
+  font-family: "Montserrat medium", sans-serif;
+  margin-top: 50px;
+}
