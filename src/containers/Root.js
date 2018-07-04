@@ -7,17 +7,17 @@ import history from "../helpers/history.js"
 import NotificationsContext from "../components/NotificationsContext"
 
 const options = {
-  events: {
-    CryptoMon: [
-      "Transfer",
-      "Unboxed"
-    ]
-  },
   contracts: [
     CryptoMon
   ],
+  events: {
+    CryptoMon: [
+      'Unboxed'
+    ]
+  },
   syncAlways: true
 }
+
 
 class Root extends Component {
   state = {

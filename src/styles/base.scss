@@ -12,6 +12,8 @@ $icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 @import "./components/LastClashes.scss";
 @import "./components/MonstersList.scss";
 @import "./containers/Unbox.scss";
+@import "./containers/Market.scss";
+@import "./containers/Fight.scss";
 
 .content {
   font-family: "Montserrat medium", sans-serif;

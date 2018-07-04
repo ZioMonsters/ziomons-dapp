@@ -1,10 +1,12 @@
 import React, { Component } from "react"
-import { NavDropdown, MenuItem } from "react-bootstrap"
+import { NavDropdown, MenuItem, Glyphicon } from "react-bootstrap"
 import NotificationsContext from "./NotificationsContext.js"
 import { drizzleConnect } from "drizzle-react"
 import PropTypes from "prop-types"
 import {getAddress} from "../selectors"
+import Web3 from 'web3'
 
+const web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:9545"));
 
 class Notifications extends Component {
   static contextTypes = {
@@ -13,13 +15,20 @@ class Notifications extends Component {
 
   constructor(props, context) {
     super(props)
-    context.drizzle.contracts.CryptoMon.methods.monsters.cacheCall(props.account)
-    // console.log("context.drizzle.contracts.CryptoMon.methods", context.drizzle.contracts.CryptoMon.methods)
+    this.contract = context.drizzle.contracts.CryptoMon;
+    this.contract.methods.totalSupply().call()
+      .then(totalSupply => {
+        for (let i = 0; i < totalSupply; i++) {
+          this.contract.methods.monsters.cacheCall(i);
+        }
+      })
   }
 
   render() {
     return (
-      <NavDropdown title="Notifications">
+      <NavDropdown title = {
+        <div style = {{ display: 'inline-block'}}>Notifications <Glyphicon glyph="bell" /></div>
+      }>
         <NotificationsContext.Consumer>
           {
             ({ list }) => (

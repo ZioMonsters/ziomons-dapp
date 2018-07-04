@@ -1,0 +1,548 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mons",
+				"monster"
+			],
+			[
+				"monst",
+				"monster"
+			],
+			[
+				"Monster",
+				"monsters"
+			],
+			[
+				"paddi",
+				"padding-top\tproperty"
+			],
+			[
+				"padding",
+				"padding-top\tproperty"
+			],
+			[
+				"paddin",
+				"padding-right\tproperty"
+			],
+			[
+				"btn-r",
+				"btn-primary"
+			],
+			[
+				"rar",
+				"rarity"
+			],
+			[
+				"le",
+				"level"
+			],
+			[
+				"ge",
+				"genMonster"
+			],
+			[
+				"_att",
+				"_attackerId"
+			],
+			[
+				"_at",
+				"_attackerId"
+			],
+			[
+				"monste",
+				"monsters"
+			],
+			[
+				"mon",
+				"monsterId"
+			],
+			[
+				"mo",
+				"monsterId"
+			],
+			[
+				"cr",
+				"cryptoMonsInstance"
+			],
+			[
+				"favicon",
+				"favicon-32x32"
+			],
+			[
+				"cry",
+				"cryptomons-list"
+			],
+			[
+				"in",
+				"instance"
+			],
+			[
+				"a",
+				"account"
+			],
+			[
+				"rando",
+				"randomGen"
+			],
+			[
+				"ram",
+				"random2"
+			],
+			[
+				"monster",
+				"monster2"
+			],
+			[
+				"mosn",
+				"monster1"
+			],
+			[
+				"Me",
+				"MetanodottoSale"
+			],
+			[
+				"i",
+				"instance"
+			],
+			[
+				"dep",
+				"deploy"
+			],
+			[
+				"m",
+				"Metanodotto"
+			],
+			[
+				"to",
+				"tokensAvailable"
+			],
+			[
+				"Meta",
+				"MetanodottoInstance"
+			],
+			[
+				"token",
+				"tokensAvailable"
+			],
+			[
+				"M",
+				"MetanodottoSale"
+			],
+			[
+				"Met",
+				"MetanodottoSaleInstance"
+			],
+			[
+				"progr",
+				"progressPercent"
+			],
+			[
+				"toke",
+				"tokensAvailable"
+			],
+			[
+				"tonk",
+				"tokensSold"
+			],
+			[
+				"contr",
+				"contractInstance"
+			],
+			[
+				"progres",
+				"progress-bar"
+			],
+			[
+				"ini",
+				"initContracts"
+			],
+			[
+				"con",
+				"contracts"
+			],
+			[
+				"init",
+				"initWeb3"
+			],
+			[
+				"_tok",
+				"_tokenPrice"
+			],
+			[
+				"can",
+				"candidatesSelect"
+			],
+			[
+				"candi",
+				"candidatesCount"
+			],
+			[
+				"candida",
+				"_candidateId"
+			],
+			[
+				"electio",
+				"electionInstance"
+			],
+			[
+				"elec",
+				"electionInstance"
+			],
+			[
+				"web3",
+				"web3Provider"
+			],
+			[
+				"cand",
+				"candidates"
+			],
+			[
+				"winner",
+				"winnerVotes"
+			],
+			[
+				"candid",
+				"candidates"
+			],
+			[
+				"Ele",
+				"ElectionResult"
+			],
+			[
+				"rand",
+				"randomAttack"
+			],
+			[
+				"random",
+				"randomAttack"
+			],
+			[
+				"probShip",
+				"probShipFiller"
+			],
+			[
+				"ran",
+				"random_y"
+			],
+			[
+				"ra",
+				"random_y"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"prob",
+				"probShip"
+			],
+			[
+				"pro",
+				"probAttack"
+			],
+			[
+				"cons",
+				"console"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in s",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"eslint",
+				"ESLint Formatter: Format this file"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"esli",
+				"ESLint Formatter: Format this file"
+			],
+			[
+				"SublimeLin",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"package control ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/rispoliriccardo/repo/cryptomon-dapp/package.json",
+		"/home/rispoliriccardo/repo/cryptomon-dapp/package",
+		"/home/rispoliriccardo/repo/cryptomon-dapp/src/components/NotificationsContext.js",
+		"/home/rispoliriccardo/repo/cryptomon-dapp/src/components/MarketListContext.js",
+		"/home/rispoliriccardo/repo/cryptomon-dapp/src/styles/containers/Unbox.scss",
+		"/home/rispoliriccardo/repo/cryptomon-dapp/src/styles/base.scss",
+		"/home/rispoliriccardo/repo/cryptomon-dapp/src/containers/Routes.js",
+		"/home/rispoliriccardo/repo/cryptomon-dapp/src/containers/Unbox.js",
+		"/home/rispoliriccardo/.config/sublime-text-3/Packages/User/auto_save.sublime-settings",
+		"/home/rispoliriccardo/.config/sublime-text-3/Packages/auto-save/auto_save.sublime-settings",
+		"/home/rispoliriccardo/.config/sublime-text-3/Packages/auto-save/Default (Linux).sublime-keymap",
+		"/home/rispoliriccardo/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/rispoliriccardo/repo/cryptomon-dapp/truffle.js",
+		"/home/rispoliriccardo/repo/cryptomon-dapp/cryptomon-contracts/truffle.js",
+		"/home/rispoliriccardo/repo/cryptomon-dapp/src/js/truffle-contract.js",
+		"/home/rispoliriccardo/repo/cryptomon-dapp/bs-config.json",
+		"/home/rispoliriccardo/repo/cryptomon-contracts/truffle.js",
+		"/home/rispoliriccardo/repo/cryptoMons/src/js/app.js",
+		"/home/rispoliriccardo/.config/sublime-text-3/Packages/User/ESLint.sublime-settings",
+		"/home/rispoliriccardo/.config/sublime-text-3/Packages/ESLint/ESLint.sublime-settings",
+		"/home/rispoliriccardo/repo/cryptomon-dapp/src/js/app.js",
+		"/home/rispoliriccardo/repo/cryptomon-dapp/.editorconfig",
+		"/home/rispoliriccardo/repo/cryptomon-contracts/contracts/Core.sol",
+		"/home/rispoliriccardo/repo/cryptoMons/src/index.html",
+		"/home/rispoliriccardo/Scrivania/index.html",
+		"/home/rispoliriccardo/repo/cryptomon-dapp/src/index.html",
+		"/home/rispoliriccardo/repo/cryptomon-tests/gen",
+		"/home/rispoliriccardo/repo/cryptomon-tests/battle.js",
+		"/home/rispoliriccardo/.ssh/config",
+		"/home/rispoliriccardo/repo/metanodotto/src/js/app.js",
+		"/home/rispoliriccardo/repo/cryptoMons/contracts/CryptoMons.sol",
+		"/home/rispoliriccardo/repo/metanodotto/src/index.html",
+		"/home/rispoliriccardo/repo/cryptoMons-old/src/index.html",
+		"/home/rispoliriccardo/repo/cryptoMons/contracts/SupportsInterfaceWithLookup.sol",
+		"/home/rispoliriccardo/repo/cryptoMons/contracts/ERC721BasicToken.sol",
+		"/home/rispoliriccardo/repo/cryptoMons/contracts/ERC721Basic.sol",
+		"/home/rispoliriccardo/repo/cryptoMons/contracts/ERC165.sol",
+		"/home/rispoliriccardo/repo/cryptoMons/migrations/2_deploy_contracts.js",
+		"/home/rispoliriccardo/repo/cryptoMons/contracts/ERC721Receiver.sol",
+		"/home/rispoliriccardo/repo/cryptoMons/contracts/AddressUtils.sol",
+		"/home/rispoliriccardo/repo/cryptoMons/contracts/SafeMath.sol",
+		"/home/rispoliriccardo/repo/metanodotto/contracts/Metanodotto.sol",
+		"/home/rispoliriccardo/repo/metanodotto/contracts/MetanodottoSale.sol",
+		"/home/rispoliriccardo/repo/metanodotto/migrations/2_deploy_contracts.js",
+		"/home/rispoliriccardo/repo/metanodotto/scripts/script.js",
+		"/home/rispoliriccardo/repo/metanodotto/src/js/truffle-contract.js",
+		"/home/rispoliriccardo/repo/metanodotto/contracts/SafeMath.sol",
+		"/home/rispoliriccardo/repo/metanodotto/truffle.js",
+		"/home/rispoliriccardo/repo/metanodotto/package.json",
+		"/home/rispoliriccardo/repo/metanodotto/bs-config.json",
+		"/home/rispoliriccardo/repo/metanodotto/migrations/1_initial_migration.js",
+		"/home/rispoliriccardo/repo/metanodotto/contracts/Migrations.sol",
+		"/home/rispoliriccardo/repo/election/src/js/app.js",
+		"/home/rispoliriccardo/repo/election/contracts/Election.sol",
+		"/home/rispoliriccardo/repo/election/src/index.html",
+		"/home/rispoliriccardo/repo/election/box-img-sm.png",
+		"/home/rispoliriccardo/repo/election/build/contracts/Election.json",
+		"/home/rispoliriccardo/repo/election/src/app",
+		"/home/rispoliriccardo/repo/election/migrations/1_initial_migration.js",
+		"/home/rispoliriccardo/repo/election/migrations/2_deploy_contracts.js",
+		"/home/rispoliriccardo/repo/id-test/truffle.js",
+		"/home/rispoliriccardo/repo/id-test/contracts/id-test.sol",
+		"/home/rispoliriccardo/repo/id-test/src/index.html",
+		"/home/rispoliriccardo/repo/id-test/migrations/2_deploy_contracts.js",
+		"/home/rispoliriccardo/repo/election/truffle.js",
+		"/home/rispoliriccardo/repo/id-test/truffle",
+		"/home/rispoliriccardo/repo/election/src/app.js",
+		"/home/rispoliriccardo/repo/pet-shop/src/js/app.js",
+		"/home/rispoliriccardo/repo/pet-shop/src/pets.json",
+		"/home/rispoliriccardo/election/migrations/2_deploy_contracts.js",
+		"/home/rispoliriccardo/repo/Election/index.html",
+		"/home/rispoliriccardo/repo/Election/Election.sol",
+		"/home/rispoliriccardo/repo/Election/index.js",
+		"/home/rispoliriccardo/.local/share/Trash/files/election.deprecated",
+		"/home/rispoliriccardo/repo/election/index.js",
+		"/home/rispoliriccardo/repo/election/Election.sol",
+		"/home/rispoliriccardo/repo/election/index.html",
+		"/home/rispoliriccardo/repo/election/main.css",
+		"/home/rispoliriccardo/repo/election/abi.txt",
+		"/home/rispoliriccardo/repo/wrestling/truffle.js",
+		"/home/rispoliriccardo/repo/wrestling/migrations/2_deploy_contracts.js",
+		"/home/rispoliriccardo/repo/election/contracts/election.sol",
+		"/home/rispoliriccardo/repo/wrestling/truffle-config.js",
+		"/home/rispoliriccardo/repo/wrestling/contracts/Wrestling.sol",
+		"/home/rispoliriccardo/repos/battaglia-navale/index.js",
+		"/home/rispoliriccardo/repos/battaglia-navale-client/index.js",
+		"/home/rispoliriccardo/repos/battaglia-navale/render-field.js",
+		"/home/rispoliriccardo/Scrivania/index.js",
+		"/home/rispoliriccardo/trash",
+		"/home/rispoliriccardo/repos/battaglia-navale-client/signup.js",
+		"/home/rispoliriccardo/.config/sublime-text-3/Packages/User/nodejs.sublime-build"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "AdminPanel.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 233.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}

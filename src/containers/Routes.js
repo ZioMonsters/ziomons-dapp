@@ -3,6 +3,8 @@ import { Route } from "react-router-dom"
 import Home from "./Home.js"
 import User from "./User.js"
 import Unbox from "./Unbox.js"
+import Market from "./Market.js"
+import Fight from "./Fight.js"
 
 const Routes = () => [
   <Route
@@ -14,8 +16,16 @@ const Routes = () => [
     component = { User }
   />,
   <Route
-    path = { "/unbox" }
+    path = { "/unbox" }market
     component = { Unbox }
+  />,
+  <Route
+    path = { "/market" }
+    component = { Market }
+  />,
+  <Route
+    path = { "/fight" }
+    component = { Fight }
   />
 ]
 
