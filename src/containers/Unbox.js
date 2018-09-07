@@ -30,7 +30,7 @@ class Unbox extends Component {
   unbox = pack => {
     const { address } = this.props
     // todo perche non funziona
-    this.contract.methods.unbox.cacheSend({ from: address, value: values[pack] })
+    this.contract.methods.unbox.cacheSend({ from: address, value: values[pack], gas: 1055638*5 })
   }
 
   render() {
@@ -67,7 +67,6 @@ class Unbox extends Component {
 
 const mapStateToProps = state => {
   const [account, balance] = Object.entries(state.accountBalances)[0]
-  console.log('state', state.contracts.CryptoMon.events)
   return {
     ...state,
     account,

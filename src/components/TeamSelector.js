@@ -3,14 +3,11 @@ import { Grid, Row, Col, Button, Glyphicon } from "react-bootstrap"
 import { drizzleConnect } from "drizzle-react"
 import { DragDropContext } from "react-dnd"
 import HTML5Backend from "react-dnd-html5-backend"
-import PropTypes from "prop-types"
-import { getAddress } from "../selectors"
 
-//Components importing
-import Monster from "../components/DragMonster.js"
-import TeamMonster from "../components/DropMonster.js"
+import DragMonster from "../components/DragMonster.js"
+import DropMonster from "../components/DropMonster.js"
 
-class Fight extends Component {
+class TeamSelector extends Component {
   static contextTypes = {
     drizzle: PropTypes.object
   }
@@ -58,6 +55,45 @@ class Fight extends Component {
     }
   }
 
+  renderTeam() {
+    return (
+      <Grid fluid>
+        <Col md = { 6 }>
+          {
+            this.state.team.slice(0,3).map((monster, i) => 
+              <TeamMonster 
+                monster = { monster } 
+                setMonster = 
+                  { 
+                    monsterId => this.setState(({ team }) => {
+                      team[i] = monsterId
+                      return { team }
+                    })
+                  }
+              />
+            )
+          }
+        </Col>
+        <Col md = { 6 } style = {{ "padding-top": "20%" }}>
+          {
+            this.state.team.slice(3).map((monster, i) => 
+              <TeamMonster 
+                monster = { monster } 
+                setMonster = 
+                  { 
+                    monsterId => this.setState(({ team }) => {
+                      team[i+3] = monsterId
+                      return { team }
+                    })
+                  }
+              />
+            )
+          }
+        </Col>
+      </Grid>
+    )
+  }
+
   render() {
     const monsters = this.state.monsters, monstersPerRow = 4, rows = []
     //todo This will be replaced by API Paginator
@@ -68,7 +104,7 @@ class Fight extends Component {
       <Grid fluid>
         <Col className = { "monsters-selector" } md = { 6 }>
           <Grid fluid>
-            <Row><h1 className = { "text-center" }><strong>Team selector:</strong></h1></Row>
+            <Row><h1><strong>Team selector:</strong></h1></Row>
             {
               rows.map((row, rowNumber) => 
                 <Row>
@@ -89,46 +125,11 @@ class Fight extends Component {
             <Row>
               <Col md = { 2 } style = {{ "padding-top":"40%" }}><Glyphicon glyph = { "chevron-right" } style = {{ "font-size":"75px" }} /></Col>
               <Col md = { 10 }> 
-                <Grid fluid>
-                  <Col md = { 6 }>
-                    {
-                      this.state.team.slice(0,3).map((monster, i) => 
-                        <TeamMonster 
-                          monster = { monster } 
-                          setMonster = 
-                            { 
-                              monsterId => this.setState(({ team }) => {
-                                team[i] = monsterId
-                                return { team }
-                              })
-                            }
-                        />
-                      )
-                    }
-                  </Col>
-                  <Col md = { 6 } style = {{ "padding-top": "20%" }}>
-                    {
-                      this.state.team.slice(3).map((monster, i) => 
-                        <TeamMonster 
-                          monster = { monster } 
-                          setMonster = 
-                            { 
-                              monsterId => this.setState(({ team }) => {
-                                team[i+3] = monsterId
-                                return { team }
-                              })
-                            }
-                        />
-                      )
-                    }
-                  </Col>
-                </Grid>
+                {
+                  this.renderTeam()
+                }
                 <Row className = { "text-center "}>
-                  <br/><Button onClick = { e => { 
-                    e.preventDefault()
-                    console.log("sono qui")
-                    this.setState({ team: [null, null, null, null, null] }) 
-                  }}>Reset team</Button>
+                  <br/><Button onClick = { () => window.location.reload() }>Reset team</Button>
                 </Row>
               </Col>
             </Row>  
@@ -150,4 +151,6 @@ const mapStateToProps = state => {
   }
 } 
 
-export default DragDropContext(HTML5Backend)(drizzleConnect(Fight, mapStateToProps))
+export default DragDropContext(HTML5Backend)(drizzleConnect(TeamSelector, mapStateToProps))
+
+
