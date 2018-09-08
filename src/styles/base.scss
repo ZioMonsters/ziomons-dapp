@@ -17,6 +17,7 @@ $icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 @import "./containers/Home.scss";
 @import "./containers/TheGame.scss";
 @import "./containers/AboutUs.scss";
+@import "./containers/Tech.scss";
 //
 //.content {
 //  font-family: "Montserrat medium", sans-serif;
@@ -35,15 +36,22 @@ $icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 }
 
 .btn.btn-default.cryptomon-button {
-  &:hover {
-    background: $primary-color;
-    color: #FFF;
-    transition: all .3s;
-  }
-  color: $primary-color;
   border: 3px solid $primary-color;
   margin-bottom: 70px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  &:not(.fixed) {
+    &:hover {
+      background: $primary-color;
+      color: #FFF;
+      transition: all .3s;
+    }
+    color: $primary-color;
+  }
+  &.fixed {
+    background: $primary-color;
+    color: #FFF;
+    cursor: default;
+  }
 }

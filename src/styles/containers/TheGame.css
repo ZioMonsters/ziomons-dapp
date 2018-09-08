@@ -1,6 +1,7 @@
 .the-game {
   text-align: center; }
   .the-game p {
-    line-height: 2; }
+    line-height: 2;
+    text-align: justify; }
   .the-game .cryptomon-button {
     margin-top: 30px; }

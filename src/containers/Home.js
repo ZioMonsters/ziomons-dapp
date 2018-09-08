@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 let monsterImage
 const Home = ({ isLoaded }) => {
   if (typeof monsterImage === "undefined") {
-    monsterImage = require(`../assets/monsters/${new Date().getTime() % 11}.svg`)
+    monsterImage = require(`../assets/monsters/${new Date().getTime() % 18}.svg`)
   }
   return (
     <Grid fluid className = { "home margin" }>
@@ -27,7 +27,7 @@ const Home = ({ isLoaded }) => {
           isLoaded ?
             <LinkContainer to = {isLoaded && "/unbox" } style = { !isLoaded && { cursor: "default" }}>
               <Button className = { "cryptomon-button" }>Unbox your first monsters</Button>
-            </LinkContainer> : <Button className = { "cryptomon-button" }>Login with Metamask</Button>
+            </LinkContainer> : <Button className = { "cryptomon-button fixed" }>Login with Metamask</Button>
         }
       </Row>
       <Row className = { "features" }>

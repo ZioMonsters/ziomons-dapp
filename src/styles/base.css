@@ -6056,7 +6056,8 @@ img {
 .the-game {
   text-align: center; }
   .the-game p {
-    line-height: 2; }
+    line-height: 2;
+    text-align: justify; }
   .the-game .cryptomon-button {
     margin-top: 30px; }
 
@@ -6070,6 +6071,10 @@ img {
   background-size: cover;
   height: 300px; }
 
+.tech p {
+  line-height: 2;
+  text-align: justify; }
+
 .content .margin {
   margin-left: 25%;
   margin-right: 25%; }
@@ -6077,13 +6082,18 @@ img {
     line-height: 2; }
 
 .btn.btn-default.cryptomon-button {
-  color: #160081;
   border: 3px solid #160081;
   margin-bottom: 70px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0; }
-  .btn.btn-default.cryptomon-button:hover {
+  .btn.btn-default.cryptomon-button:not(.fixed) {
+    color: #160081; }
+    .btn.btn-default.cryptomon-button:not(.fixed):hover {
+      background: #160081;
+      color: #FFF;
+      transition: all .3s; }
+  .btn.btn-default.cryptomon-button.fixed {
     background: #160081;
     color: #FFF;
-    transition: all .3s; }
+    cursor: default; }

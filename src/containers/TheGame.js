@@ -1,5 +1,5 @@
 import React from "react"
-import { Grid, Row, Col, Image, Button } from "react-bootstrap"
+import { Grid, Row, Button } from "react-bootstrap"
 import { LinkContainer } from "react-router-bootstrap"
 import ReactSVG from "react-svg"
 
@@ -10,14 +10,20 @@ const TheGame = () => {
         <h1>The Game</h1>
         <p>
           The core of ziomons is divided in two: trade (coming soon) and fighting. All ziomons are tradable and can fight with other ziomons.
-
           The value of the ziomon on the market is determined by its rarity and its level. There are 4 different types of rarity: common, not common, rare and legendary. The rarity of the ziomons influences the stats, in fact, the higher the rarity of the ziomons is, the better the stats are.
-
-          Unpacking rules: you can unpack three different type of envelopes of card. The most you pay the better is the chance to gain a legendary ziomon.
         </p>
       </Row>
       <Row>
         <ReactSVG src = { require("../assets/monsters/1.svg" ) } />
+      </Row>
+      <Row>
+        <h3>Unpacking rules</h3>
+        <p>
+          You can unpack three different type of envelopes of card. The most you pay the better is the chance to gain a legendary ziomon.
+        </p>
+      </Row>
+      <Row>
+        <ReactSVG src = { require("../assets/monsters/2.svg" ) } />
       </Row>
       <Row>
         <h3>Match Rule</h3>
