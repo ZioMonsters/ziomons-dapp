@@ -5853,7 +5853,7 @@ button.close {
   height: 75px;
   border-radius: 0;
   border: none;
-  background-color: #4a96cd; }
+  background-color: #160081; }
   .navbar.unbox {
     transition: all 1s;
     background-color: #ff82e8; }
@@ -5923,13 +5923,13 @@ button.close {
         transition: all .3s; }
 
 .last-clashes {
-  border-right: 1px solid #4a96cd; }
+  border-right: 1px solid #160081; }
   .last-clashes .row {
     padding: 15px; }
   .last-clashes .rect {
     float: left;
     width: 100%;
-    background-color: #4a96cd; }
+    background-color: #160081; }
   .last-clashes .rect:before {
     content: "";
     display: block;
@@ -5941,7 +5941,7 @@ button.close {
 .monsters-list .rect {
   float: left;
   width: 100%;
-  background-color: #4a96cd; }
+  background-color: #160081; }
 
 .monsters-list .rect:before {
   content: "";
@@ -6033,6 +6033,21 @@ img {
   background-color: #ff827c;
   border: 4px solid #ff4f4c;
   font-size: 20px; }
+
+.home h1 {
+  text-align: center;
+  font-size: 60px; }
+
+.home .info {
+  text-align: center; }
+
+.home .test {
+  color: #160081;
+  border: 3px solid #160081; }
+  .home .test:hover {
+    background: #160081;
+    color: #FFF;
+    transition: all .3s; }
 
 .content {
   font-family: "Montserrat medium", sans-serif;

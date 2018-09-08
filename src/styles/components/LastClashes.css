@@ -1,11 +1,11 @@
 .last-clashes {
-  border-right: 1px solid #4a96cd; }
+  border-right: 1px solid #160081; }
   .last-clashes .row {
     padding: 15px; }
   .last-clashes .rect {
     float: left;
     width: 100%;
-    background-color: #4a96cd; }
+    background-color: #160081; }
   .last-clashes .rect:before {
     content: "";
     display: block;

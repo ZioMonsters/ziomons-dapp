@@ -4,7 +4,7 @@
 .monsters-list .rect {
   float: left;
   width: 100%;
-  background-color: #4a96cd; }
+  background-color: #160081; }
 
 .monsters-list .rect:before {
   content: "";

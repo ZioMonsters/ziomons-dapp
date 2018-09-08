@@ -1,0 +1,14 @@
+.home h1 {
+  text-align: center;
+  font-size: 60px; }
+
+.home .info {
+  text-align: center; }
+
+.home .test {
+  color: #160081;
+  border: 3px solid #160081; }
+  .home .test:hover {
+    background: #160081;
+    color: #FFF;
+    transition: all .3s; }

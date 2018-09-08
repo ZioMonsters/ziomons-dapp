@@ -19,8 +19,8 @@ class NavBar extends Component {
         </Navbar.Header>
         <Nav pullRight>
           <NavItem className = { "user-info" }>
-            <span>Address: { account }</span>
-            <span>Balance: { balance }</span>
+            <span style = {{ "padding-top": "5px" }}><strong>Address:</strong> { account }</span>
+            <span><strong>Balance:</strong> { balance }</span>
           </NavItem>
           <Notifications />
         </Nav>
