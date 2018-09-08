@@ -10,7 +10,7 @@ class Home extends Component {
       open: false
     }
   }
- |hj
+
   render() {
     return (
       <Grid className = { "home" }>
