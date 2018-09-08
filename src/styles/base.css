@@ -6040,6 +6040,9 @@ img {
   text-align: center;
   font-size: 60px; }
 
+.home .quote a {
+  color: gray; }
+
 .home .features {
   margin-top: 70px;
   text-align: left; }

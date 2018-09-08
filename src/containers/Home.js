@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import { Button, Collapse, Well, Grid, Row, Image, Col } from "react-bootstrap"
 import { drizzleConnect } from "drizzle-react"
-import sprite from "../assets/sprite.svg"
 import ReactSVG from 'react-svg'
 import { LinkContainer } from "react-router-bootstrap"
 
@@ -11,12 +10,12 @@ const Home = () => {
       <Row>
         <h1>Welcome</h1>
       </Row>
-      <Row>
-        <Col md = { 4 }><ReactSVG src = { sprite } /></Col>
+      <Row className = { "quote" }>
+        <Col md = { 4 }><ReactSVG src = { require(`../assets/monsters/${new Date().getTime() % 11}.svg`) } /></Col>
         <Col md = { 8 }>
           <blockquote>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-            <footer><cite>Cryptomon team</cite></footer>
+            <p>"Ziomons is a ETH blockchain based game which uses ERC721 (NFT) tokens that allows you to fight other Ziomons trainer worldwide."</p>
+            <footer><cite><a href = {"https://www.soluzionifutura.it"} target={"_blank"}>Soluzioni Futura team</a></cite></footer>
           </blockquote>
         </Col>
       </Row>
