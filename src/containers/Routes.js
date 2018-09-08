@@ -7,6 +7,8 @@ import Market from "./Market.js"
 import Fight from "./Fight.js"
 import MonsterPage from "./MonsterPage.js"
 import TheGame from "./TheGame.js"
+import AboutUs from "./AboutUs.js"
+import Tech from "./Tech.js"
 
 const Routes = () => [
   <Route
@@ -36,6 +38,14 @@ const Routes = () => [
   <Route
     path = { "/the-game" }
     component = { TheGame }
+  />,
+  <Route
+    path = { "/about-us" }
+    component = { AboutUs }
+  />,
+  <Route
+    path = { "/tech" }
+    component = { Tech }
   />
 ]
 

@@ -15,10 +15,12 @@ $icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 @import "./containers/Market.scss";
 @import "./containers/Fight.scss";
 @import "./containers/Home.scss";
+@import "./containers/TheGame.scss";
+@import "./containers/AboutUs.scss";
 
 .content {
   font-family: "Montserrat medium", sans-serif;
-  margin-top: 50px;
+  margin: 0 10%;
 }
 
 .cryptomon-button {

@@ -6055,9 +6055,15 @@ img {
   .home .info .about-us {
     margin-top: 70px; }
 
+.about-us img {
+  margin-top: 30px; }
+
+.about-us p {
+  line-height: 2; }
+
 .content {
   font-family: "Montserrat medium", sans-serif;
-  margin-top: 50px; }
+  margin: 0 10%; }
 
 .cryptomon-button {
   color: #160081;

@@ -5,14 +5,18 @@ import ReactSVG from 'react-svg'
 import { LinkContainer } from "react-router-bootstrap"
 import { Link } from "react-router-dom"
 
+let monsterImage
 const Home = ({ isLoaded }) => {
+  if (typeof monsterImage === "undefined") {
+    monsterImage = require(`../assets/monsters/${new Date().getTime() % 11}.svg`)
+  }
   return (
-    <Grid fluid = {false} className = { "home" }>
+    <Grid fluid className = { "home" }>
       <Row>
         <h1>Welcome</h1>
       </Row>
       <Row className = { "quote" }>
-        <Col md = { 4 }><ReactSVG src = { require(`../assets/monsters/${new Date().getTime() % 11}.svg`) } /></Col>
+        <Col md = { 4 }><ReactSVG src = { monsterImage } /></Col>
         <Col md = { 8 }>
           <blockquote>
             <p>"Ziomons is a ETH blockchain based game which uses ERC721 (NFT) tokens that allows you to fight other Ziomons trainer worldwide. Bet your ETH on your fights and grow your ETH pfolio!"</p>
@@ -21,11 +25,12 @@ const Home = ({ isLoaded }) => {
         </Col>
       </Row>
       <Row className = { "features" }>
+        <h3>How does it work</h3>
         <ul>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
+          <li>Purchase a Ziomons blister and unpack your ZM to setup a team</li>
+          <li>Look for a challenger: place your bet and match with another trainer! Your ZM will fight and the winner recieves a prize propotioned to the bet made.</li>
+          <li>Train your ZM to make them stronger on the battlefield</li>
+          <li>Arrange your team to be able to win all battles!</li>
         </ul>
       </Row>
       <Row className = {"info"}>
