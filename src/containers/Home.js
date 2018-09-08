@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Button, Collapse, Well, Grid, Row, Image, Col } from "react-bootstrap"
 import { drizzleConnect } from "drizzle-react"
-import ReactSVG from 'react-svg'
+import ReactSVG from "react-svg"
 import { LinkContainer } from "react-router-bootstrap"
 import { Link } from "react-router-dom"
 
@@ -11,18 +11,24 @@ const Home = ({ isLoaded }) => {
     monsterImage = require(`../assets/monsters/${new Date().getTime() % 11}.svg`)
   }
   return (
-    <Grid fluid className = { "home" }>
+    <Grid fluid className = { "home margin" }>
+      <h1>Welcome to Ziomons</h1>
       <Row>
-        <h1>Welcome</h1>
+        <ReactSVG src = { monsterImage } />
       </Row>
       <Row className = { "quote" }>
-        <Col md = { 4 }><ReactSVG src = { monsterImage } /></Col>
-        <Col md = { 8 }>
-          <blockquote>
-            <p>"Ziomons is a ETH blockchain based game which uses ERC721 (NFT) tokens that allows you to fight other Ziomons trainer worldwide. Bet your ETH on your fights and grow your ETH pfolio!"</p>
-            <footer><cite>A game made by <Link to = { "/about-us" }>kids</Link> but NOT for kids</cite></footer>
-          </blockquote>
-        </Col>
+        <blockquote>
+          <p>"Ziomons is a ETH blockchain based game which uses ERC721 (NFT) tokens that allows you to fight other Ziomons trainer worldwide. Bet your ETH on your fights and grow your ETH pfolio!"</p>
+          <footer><cite>A game made by <Link to = { "/about-us" }>kids</Link> but NOT for kids</cite></footer>
+        </blockquote>
+      </Row>
+      <Row>
+        {
+          isLoaded ?
+            <LinkContainer to = {isLoaded && "/unbox" } style = { !isLoaded && { cursor: "default" }}>
+              <Button className = { "cryptomon-button" }>Unbox your first monsters</Button>
+            </LinkContainer> : <Button className = { "cryptomon-button" }>Login with Metamask</Button>
+        }
       </Row>
       <Row className = { "features" }>
         <h3>How does it work</h3>
@@ -34,33 +40,22 @@ const Home = ({ isLoaded }) => {
         </ul>
       </Row>
       <Row className = {"info"}>
-        <Row>
-          <LinkContainer to = {isLoaded ? "/unbox" : "/"} style = { !isLoaded && { cursor: "default" }}>
+        <Col md = { 4 }>
+          <LinkContainer exact to = {"/the-game"}>
             <Button className = { "cryptomon-button" }>
-              {
-                isLoaded ?
-                  "Unbox your first monsters" :
-                  "Login with Metamask"
-              }
+              The Game
             </Button>
           </LinkContainer>
-        </Row>
-          <Col md = { 4 }>
-            <LinkContainer to = {"/the-game"}>
-              <Button className = { "cryptomon-button" }>
-                The Game
-              </Button>
-            </LinkContainer>
-          </Col>
+        </Col>
         <Col md = { 4 }>
-          <LinkContainer to = {"/about-us"}>
+          <LinkContainer exact to = {"/about-us"}>
             <Button className = { "cryptomon-button" }>
               About us
             </Button>
           </LinkContainer>
         </Col>
         <Col md = { 4 }>
-          <LinkContainer to = {"/tech"}>
+          <LinkContainer exact to = {"/tech"}>
             <Button className = { "cryptomon-button" }>
               Tech
             </Button>

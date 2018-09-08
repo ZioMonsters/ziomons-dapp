@@ -1,5 +1,5 @@
 $icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 @import "variables";
 @import "mixins";
 
@@ -17,13 +17,24 @@ $icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 @import "./containers/Home.scss";
 @import "./containers/TheGame.scss";
 @import "./containers/AboutUs.scss";
+//
+//.content {
+//  font-family: "Montserrat medium", sans-serif;
+//  margin: 0 10%;
+//}
 
 .content {
-  font-family: "Montserrat medium", sans-serif;
-  margin: 0 10%;
+  .margin {
+    margin-left: 25%;
+    margin-right: 25%;
+
+    p {
+      line-height: 2;
+    }
+  }
 }
 
-.cryptomon-button {
+.btn.btn-default.cryptomon-button {
   &:hover {
     background: $primary-color;
     color: #FFF;

@@ -1,5 +1,9 @@
-.about-us img {
-  margin-top: 30px; }
+.about-us .title h1 {
+  padding-top: 10px; }
 
-.about-us p {
-  line-height: 2; }
+.about-us .image {
+  background-color: #160081;
+  background-image: url("../assets/images/team.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 300px; }

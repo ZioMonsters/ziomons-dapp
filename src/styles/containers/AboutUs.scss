@@ -1,9 +1,17 @@
+@import "../variables";
+
 .about-us {
-  img {
-    margin-top: 30px;
+  .title {
+    h1 {
+      padding-top: 10px;
+    }
   }
 
-  p {
-    line-height: 2;
+  .image {
+    background-color: $primary-color;
+    background-image: url("../assets/images/team.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
   }
 }

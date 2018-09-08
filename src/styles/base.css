@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -6037,42 +6037,53 @@ img {
   border: 4px solid #ff4f4c;
   font-size: 20px; }
 
-.home h1 {
-  text-align: center;
-  font-size: 60px; }
-
-.home .quote a {
-  color: grey;
-  text-decoration: underline; }
-
-.home .features {
-  margin-top: 70px;
-  text-align: left; }
-
-.home .info {
-  margin: 70px 10% 0 10%;
+.home {
   text-align: center; }
-  .home .info .about-us {
-    margin-top: 70px; }
+  .home h1 {
+    margin-top: 20px;
+    text-align: center; }
+  .home .features {
+    text-align: left; }
+  .home .quote a {
+    color: grey;
+    text-decoration: underline; }
+  .home .info {
+    margin: 70px 10% 0 10%;
+    text-align: center; }
+    .home .info .about-us {
+      margin-top: 70px; }
 
-.about-us img {
-  margin-top: 30px; }
+.the-game {
+  text-align: center; }
+  .the-game p {
+    line-height: 2; }
+  .the-game .cryptomon-button {
+    margin-top: 30px; }
 
-.about-us p {
-  line-height: 2; }
+.about-us .title h1 {
+  padding-top: 10px; }
 
-.content {
-  font-family: "Montserrat medium", sans-serif;
-  margin: 0 10%; }
+.about-us .image {
+  background-color: #160081;
+  background-image: url("../assets/images/team.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 300px; }
 
-.cryptomon-button {
+.content .margin {
+  margin-left: 25%;
+  margin-right: 25%; }
+  .content .margin p {
+    line-height: 2; }
+
+.btn.btn-default.cryptomon-button {
   color: #160081;
   border: 3px solid #160081;
   margin-bottom: 70px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0; }
-  .cryptomon-button:hover {
+  .btn.btn-default.cryptomon-button:hover {
     background: #160081;
     color: #FFF;
     transition: all .3s; }
