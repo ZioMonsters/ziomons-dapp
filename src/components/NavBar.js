@@ -1,9 +1,9 @@
 import React, { Component } from "react"
 import { Navbar, Nav, NavItem, Image, Row, Grid } from "react-bootstrap"
-import logo from "../assets/logo/logo.svg"
+import logo from "../assets/logo/logo.png"
 import { drizzleConnect } from "drizzle-react"
-import Notifications from "./Notifications"
-import { withRouter, Link } from "react-router-dom"
+import { withRouter } from "react-router-dom"
+import { LinkContainer } from "react-router-bootstrap"
 
 class NavBar extends Component {
   render() {
@@ -12,9 +12,9 @@ class NavBar extends Component {
       <Navbar className = { pathname.split("/")[1] }>
         <Navbar.Header>
           <Navbar.Brand>
-            <Link to = { "/user" }>
-              <object data = { logo } type="image/svg+xml" />
-            </Link>
+            <LinkContainer to = { "/" }>
+              <img src = { logo } />
+            </LinkContainer>
           </Navbar.Brand>
         </Navbar.Header>
         <Nav pullRight>
@@ -22,7 +22,6 @@ class NavBar extends Component {
             <span style = {{ "padding-top": "5px" }}><strong>Address:</strong> { account }</span>
             <span><strong>Balance:</strong> { balance }</span>
           </NavItem>
-          <Notifications />
         </Nav>
       </Navbar>
     )

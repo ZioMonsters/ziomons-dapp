@@ -24,6 +24,8 @@
   .navbar .navbar-header object {
     height: 50px;
     width: auto; }
+  .navbar .navbar-header .navbar-brand {
+    padding-top: 0; }
   .navbar .dropdown {
     height: 75px; }
     .navbar .dropdown a {

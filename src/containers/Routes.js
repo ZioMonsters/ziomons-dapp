@@ -6,6 +6,7 @@ import Unbox from "./Unbox.js"
 import Market from "./Market.js"
 import Fight from "./Fight.js"
 import MonsterPage from "./MonsterPage.js"
+import TheGame from "./TheGame.js"
 
 const Routes = () => [
   <Route
@@ -31,6 +32,10 @@ const Routes = () => [
   <Route
     path = { "/monsters/:id" }
     component = { MonsterPage }
+  />,
+  <Route
+    path = { "/the-game" }
+    component = { TheGame }
   />
 ]
 

@@ -5,58 +5,61 @@ import sprite from "../assets/sprite.svg"
 import ReactSVG from 'react-svg'
 import { LinkContainer } from "react-router-bootstrap"
 
-class Home extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      aboutUsOpen: false
-    }
-  }
-
-  render() {
-    return (
-      <Grid fluid = {false} className = { "home" }>
+const Home = () => {
+  return (
+    <Grid fluid = {false} className = { "home" }>
+      <Row>
+        <h1>Welcome</h1>
+      </Row>
+      <Row>
+        <Col md = { 4 }><ReactSVG src = { sprite } /></Col>
+        <Col md = { 8 }>
+          <blockquote>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+            <footer><cite>Cryptomon team</cite></footer>
+          </blockquote>
+        </Col>
+      </Row>
+      <Row className = { "features" }>
+        <ul>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+        </ul>
+      </Row>
+      <Row className = {"info"}>
         <Row>
-          <h1>Welcome</h1>
+          <LinkContainer to = {"/unbox"}>
+            <Button className = { "cryptomon-button" }>
+              Unbox your first monsters
+            </Button>
+          </LinkContainer>
         </Row>
-        <Row>
-          <Col md = { 4 }><ReactSVG src = { sprite } /></Col>
-          <Col md = { 8 }>
-            <blockquote>
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-              <footer><cite>Cryptomon team</cite></footer>
-            </blockquote>
-          </Col>
-        </Row>
-        <Row className = {"info"} >
-          <Row>
-            <Col md = { 6 }>
-              <LinkContainer to = {"/unbox"}>
-                <Button>
-                  Unbox your first monsters
-                </Button>
-              </LinkContainer>
-            </Col>
-            <Col md = { 6 }>
-              <Button onClick={ () => this.setState(({ aboutUsOpen}) => ({ aboutUsOpen: !aboutUsOpen })) }>
-                About us
+          <Col md = { 4 }>
+            <LinkContainer to = {"/the-game"}>
+              <Button className = { "cryptomon-button" }>
+                The Game
               </Button>
-            </Col>
-          </Row>
-          <Row className = { "about-us" }>
-            <Collapse in = { this.state.aboutUsOpen }>
-              <p>
-                Anim pariatur cliche reprehenderit, enim eiusmod high life
-                accusamus terry richardson ad squid. Nihil anim keffiyeh
-                helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                ea proident.
-              </p>
-            </Collapse>
-          </Row>
-        </Row>
-      </Grid>
-    )
-  }
+            </LinkContainer>
+          </Col>
+        <Col md = { 4 }>
+          <LinkContainer to = {"/about-us"}>
+            <Button className = { "cryptomon-button" }>
+              About us
+            </Button>
+          </LinkContainer>
+        </Col>
+        <Col md = { 4 }>
+          <LinkContainer to = {"/tech"}>
+            <Button className = { "cryptomon-button" }>
+              Tech
+            </Button>
+          </LinkContainer>
+        </Col>
+      </Row>
+    </Grid>
+  )
 }
 
 const mapStateToProps = state => {
