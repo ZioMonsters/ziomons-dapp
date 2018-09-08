@@ -1,13 +1,10 @@
 import React, { Component } from "react"
 import { OverlayTrigger, Tooltip, Image } from "react-bootstrap"
-import PropTypes from "prop-types"
-import { DropTarget } from 'react-dnd';
+import { DropTarget } from "react-dnd"
 
-//Assets importing
 import placeholder from "../assets/placeholder/placeholder.svg"
 const rarityColors = ["#c4c4c4", "#87f7ff", "#7275ff", "#ffff66"]
 
-//Drag and drop setup
 const target = {
   drop: (props, monitor, component) => {
     const { id } = monitor.getItem().monster 
@@ -24,13 +21,7 @@ const collect = (connect, monitor) => ({
   isOver: monitor.isOver(),
 })
 
-//Component class
 class TeamMonster extends Component {
-  static propTypes = {
-    monster: PropTypes.Object,
-    setMonster: PropTypes.Function  
-  }
-
   constructor(props) {
     super(props)
     this.state = {
@@ -40,7 +31,7 @@ class TeamMonster extends Component {
   }
 
   render() {
-    const { connectDropTarget, isOver } = this.props
+    const { connectDropTarget } = this.props
     const { hasDropped, monster } = this.state
     if (hasDropped) {
       return (

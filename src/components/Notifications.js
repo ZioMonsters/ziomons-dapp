@@ -4,9 +4,6 @@ import NotificationsContext from "./NotificationsContext.js"
 import { drizzleConnect } from "drizzle-react"
 import PropTypes from "prop-types"
 import {getAddress} from "../selectors"
-import Web3 from 'web3'
-
-const web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:9545"));
 
 class Notifications extends Component {
   static contextTypes = {

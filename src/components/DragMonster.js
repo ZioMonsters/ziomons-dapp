@@ -39,7 +39,7 @@ class Monster extends Component {
 
   render() {
     const { connectDragSource, isDragging } = this.props
-    const { hasDropped, id } = this.state 
+    const { hasDropped } = this.state 
     if (hasDropped) {
       return <Box />
     } else {

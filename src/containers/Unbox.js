@@ -6,10 +6,6 @@ import maxi from "../assets/packs/maxi.jpg"
 import plus from "../assets/packs/plus.jpg"
 import standard from "../assets/packs/standard.jpg"
 
-// Web3 initializion -- ONLY FOR TESTING 
-import Web3 from 'web3'
-const web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:9545"));
-
 const values = {
   standard: 2,
   plus: 5,
@@ -29,7 +25,6 @@ class Unbox extends Component {
 
   unbox = pack => {
     const { address } = this.props
-    // todo perche non funziona
     this.contract.methods.unbox.cacheSend({ from: address, value: values[pack], gas: 1055638*5 })
   }
 
