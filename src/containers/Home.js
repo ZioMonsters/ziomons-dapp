@@ -3,6 +3,7 @@ import { Button, Collapse, Well, Grid, Row, Image, Col } from "react-bootstrap"
 import { drizzleConnect } from "drizzle-react"
 import ReactSVG from 'react-svg'
 import { LinkContainer } from "react-router-bootstrap"
+import { Link } from "react-router-dom"
 
 const Home = () => {
   return (
@@ -14,8 +15,8 @@ const Home = () => {
         <Col md = { 4 }><ReactSVG src = { require(`../assets/monsters/${new Date().getTime() % 11}.svg`) } /></Col>
         <Col md = { 8 }>
           <blockquote>
-            <p>"Ziomons is a ETH blockchain based game which uses ERC721 (NFT) tokens that allows you to fight other Ziomons trainer worldwide."</p>
-            <footer><cite><a href = {"https://www.soluzionifutura.it"} target={"_blank"}>Soluzioni Futura team</a></cite></footer>
+            <p>"Ziomons is a ETH blockchain based game which uses ERC721 (NFT) tokens that allows you to fight other Ziomons trainer worldwide. Bet your ETH on your fights and grow your ETH pfolio!"</p>
+            <footer><cite>A game made by <Link to = { "/about-us" }>kids</Link> but NOT for kids</cite></footer>
           </blockquote>
         </Col>
       </Row>
