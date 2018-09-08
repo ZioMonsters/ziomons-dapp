@@ -1,5 +1,17 @@
-export const getMonsters = () => {
-  return Promise.resolve(
+import fetch from "node-fetch"
+
+import { apiUrl } from "../config.json"
+
+export const getMonsters = (address, limit) => {
+  const params = {
+    address,
+    limit
+  }
+
+  return fetch(`${apiUrl}/listMonsters?params=${JSON.stringify(params)}`)
+}
+  
+  /*return Promise.resolve(
     [
       {
         id: 0,
@@ -65,5 +77,4 @@ export const getMonsters = () => {
         rarity: 0
       }
     ]
-  )
-}
+  )*/

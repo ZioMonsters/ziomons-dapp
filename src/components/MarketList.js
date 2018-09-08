@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import { getAddress } from "../selectors"
 
 // Assets importing
-import placeholderImg from "../assets/placeholder/placeholder.svg"
+import placeholderImg from "../assets/placeholder/placeholder.png"
 
 const placeholder = <Image src = { placeholderImg } />
 

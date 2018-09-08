@@ -3,7 +3,7 @@ import { Grid, Col, Image } from "react-bootstrap"
 import { drizzleConnect } from "drizzle-react"
 import { getAddress } from "../selectors"
 
-import placeholder from "../assets/placeholder/placeholder.svg"
+import placeholder from "../assets/placeholder/placeholder.png"
 
 class MonsterPage extends Component {
   render() {

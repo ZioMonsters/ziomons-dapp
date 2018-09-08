@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { OverlayTrigger, Tooltip, Image } from "react-bootstrap"
 import { DropTarget } from "react-dnd"
 
-import placeholder from "../assets/placeholder/placeholder.svg"
+import placeholder from "../assets/placeholder/placeholder.png"
 const rarityColors = ["#c4c4c4", "#87f7ff", "#7275ff", "#ffff66"]
 
 const target = {

@@ -3,7 +3,7 @@ import { NavDropdown, MenuItem, Glyphicon } from "react-bootstrap"
 import NotificationsContext from "./NotificationsContext.js"
 import { drizzleConnect } from "drizzle-react"
 import PropTypes from "prop-types"
-import {getAddress} from "../selectors"
+import { getAddress } from "../selectors"
 
 class Notifications extends Component {
   static contextTypes = {

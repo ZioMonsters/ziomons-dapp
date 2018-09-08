@@ -3,7 +3,8 @@ import React, { Component } from "react"
 import { Grid, Row, Col, Button, Glyphicon } from "react-bootstrap"
 import { DragDropContext } from "react-dnd"
 import HTML5Backend from "react-dnd-html5-backend"
-import Web3 from "web3"
+import { drizzleConnect } from "drizzle-react"
+import PropTypes from "prop-types"
 
 //Components
 import Monster from "../components/DragMonster.js"
@@ -11,47 +12,39 @@ import TeamMonster from "../components/DropMonster.js"
 
 //Helpers
 import { getMonsters } from "../helpers/api.js"
-import { fight } from "../helpers/web3.js"
+
+//Selectors
+import { getAddress } from "../selectors"
 
 class Fight extends Component {
-  constructor(props) {
+  static contextTypes = {
+    drizzle: PropTypes.object
+  }
+
+  constructor(props, context) {
     super(props)
     this.state = {
       monsters: [],
-      team: [],
+      team: new Array(5).fill(null)
     }
+    this.contract = context.drizzle.contracts.CryptoMon
+
   }
-
-  componentWillMount() {
-  // const web3 = new Web3(
-  //   new Web3.providers.HttpProvider('http://localhost:9545')
-  // );
-  // const CryptoMon = new web3.eth.Contract(abi, "0x2c2b9c9a4a25e24b174f26114e8926a9f2128fe4")
-
- }
-
 
   componentDidMount() {
-    this.setState({
-      monsters: [],
-      team: new Array(5).fill(null)
-    })
-    getMonsters().then(monsters => {
-      monsters.forEach(monster => {
-        this.setState({
-          monsters: [...this.state.monsters, monster]
-        })
-      })
-    })
-  }
+    getMonsters("0xhu8ityss8xob1f9acf8tpmkbrj4un4t25zmzf5jk", 12)//TODO replace with this.props.account
+      .then(res => res.json())
+      .then(({ monsters }) => monsters.forEach(monster => this.setState({
+        monsters: [...this.state.monsters, monster]
+      })))
+    }
 
   fight = () => {
-    if (this.state.team.length === 5) {
-       return fight(this.state.team, 0, 0)
-         .then(console.log)
-         .catch(console.error)
-        //{ team: this.state.team, minBet: 0, bet: 10 }
-    }
+    //if (this.state.team.length === 5) {
+//      this.contract.methods.fight([0,1,2,3,4], 0).send({from: this.props.account})
+      this.contract.methods.fight([0,1,2,3,4], 0).cacheSend({ from: this.props.account, gas: 1055638*5 })
+
+    //}
   }
 
   render() {
@@ -121,7 +114,7 @@ class Fight extends Component {
                 </Grid>
                 <Row className = { "text-center "}><br/>
                   <Button onClick = { () =>
-                      this.setState({ team: new Array(5).fill(null) }) 
+                      this.setState({ team: [null, null, null, null, null] }, () => {console.log(this.state.team)}) 
                   }>
                     Reset team
                   </Button>
@@ -131,12 +124,19 @@ class Fight extends Component {
           </Grid>
         </Col>
         <Col md = { 2 }>
-          <Col md = { 2 } style = {{ "padding-top":"85%" }}><Glyphicon glyph = { "chevron-right" } style = {{ "font-size":"75px" }} /></Col>
-          <Col md = { 10 } style = {{ "padding-top":"92.5%", "padding-left":"15%" }}><Button bsSize = { "large" } onClick = { () => this.fight()}>FIGHT</Button></Col>
+          <Col md = { 6 } style = {{ "padding-top":"85%" }}><Glyphicon glyph = { "chevron-right" } style = {{ "font-size":"75px" }} /></Col>
+          <Col md = { 6 } style = {{ "padding-top":"92.5%", "padding-left":"15%" }}><Button bsSize = { "large" } onClick = { () => this.fight()}>FIGHT</Button></Col>
         </Col>
       </Grid>
     )
   }
 }
 
-export default DragDropContext(HTML5Backend)(Fight)
+const mapStateToProps = state => {
+  return {
+    ...state,
+    account: getAddress(state)
+  }
+}
+
+export default DragDropContext(HTML5Backend)(drizzleConnect(Fight, mapStateToProps))
