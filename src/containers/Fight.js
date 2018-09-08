@@ -11,7 +11,7 @@ import Monster from "../components/DragMonster.js"
 import TeamMonster from "../components/DropMonster.js"
 
 //Helpers
-import { getMonsters } from "../helpers/api.js"
+import { listMonsters } from "../helpers/api.js"
 
 //Selectors
 import { getAddress } from "../selectors"
@@ -32,7 +32,7 @@ class Fight extends Component {
   }
 
   componentDidMount() {
-    getMonsters("0xhu8ityss8xob1f9acf8tpmkbrj4un4t25zmzf5jk", 12)//TODO replace with this.props.account
+    listMonsters("0xhu8ityss8xob1f9acf8tpmkbrj4un4t25zmzf5jk", 12)//TODO replace with this.props.account
       .then(res => res.json())
       .then(({ monsters }) => monsters.forEach(monster => this.setState({
         monsters: [...this.state.monsters, monster]
