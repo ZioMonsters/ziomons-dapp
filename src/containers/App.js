@@ -20,7 +20,7 @@ class App extends Component {
       //  >
           <div className="App">
             {
-              this.props.isLoaded && [
+              [
                 <NavBar />,
                 <div className = { "content" }>
                   <Switch>
@@ -38,7 +38,7 @@ class App extends Component {
 
 const mapStateToProps = state => {
   return {
-    isLoaded: state.drizzleStatus.initialized
+
   }
 }
 

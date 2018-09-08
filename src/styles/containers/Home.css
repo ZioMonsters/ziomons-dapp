@@ -3,7 +3,8 @@
   font-size: 60px; }
 
 .home .quote a {
-  color: gray; }
+  color: grey;
+  text-decoration: underline; }
 
 .home .features {
   margin-top: 70px;

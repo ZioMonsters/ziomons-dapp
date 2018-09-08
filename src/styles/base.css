@@ -5876,7 +5876,8 @@ button.close {
     height: 50px;
     width: auto; }
   .navbar .navbar-header .navbar-brand {
-    padding-top: 0; }
+    padding-top: 0;
+    cursor: pointer; }
   .navbar .dropdown {
     height: 75px; }
     .navbar .dropdown a {
@@ -6041,7 +6042,8 @@ img {
   font-size: 60px; }
 
 .home .quote a {
-  color: gray; }
+  color: grey;
+  text-decoration: underline; }
 
 .home .features {
   margin-top: 70px;

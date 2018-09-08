@@ -7,7 +7,7 @@ import { LinkContainer } from "react-router-bootstrap"
 
 class NavBar extends Component {
   render() {
-    const { account, balance, location: { pathname } } = this.props
+    const { account, balance, location: { pathname }, isLoaded } = this.props
     return (
       <Navbar className = { pathname.split("/")[1] }>
         <Navbar.Header>
@@ -17,12 +17,15 @@ class NavBar extends Component {
             </LinkContainer>
           </Navbar.Brand>
         </Navbar.Header>
-        <Nav pullRight>
-          <NavItem className = { "user-info" }>
-            <span style = {{ "padding-top": "5px" }}><strong>Address:</strong> { account }</span>
-            <span><strong>Balance:</strong> { balance }</span>
-          </NavItem>
-        </Nav>
+        {
+          isLoaded &&
+          <Nav pullRight>
+            <NavItem className = { "user-info" }>
+              <span style = {{ "padding-top": "5px" }}><strong>Address:</strong> { account }</span>
+              <span><strong>Balance:</strong> { balance }</span>
+            </NavItem>
+          </Nav>
+        }
       </Navbar>
     )
   }
@@ -36,7 +39,9 @@ const mapStateToProps = state => {
       balance
     }
   }
-  return {}
+  return {
+    isLoaded: state.drizzleStatus.initialized
+  }
 }
 
 export default withRouter(drizzleConnect(NavBar, mapStateToProps))

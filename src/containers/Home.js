@@ -5,7 +5,7 @@ import ReactSVG from 'react-svg'
 import { LinkContainer } from "react-router-bootstrap"
 import { Link } from "react-router-dom"
 
-const Home = () => {
+const Home = ({ isLoaded }) => {
   return (
     <Grid fluid = {false} className = { "home" }>
       <Row>
@@ -30,9 +30,13 @@ const Home = () => {
       </Row>
       <Row className = {"info"}>
         <Row>
-          <LinkContainer to = {"/unbox"}>
+          <LinkContainer to = {isLoaded ? "/unbox" : "/"} style = { !isLoaded && { cursor: "default" }}>
             <Button className = { "cryptomon-button" }>
-              Unbox your first monsters
+              {
+                isLoaded ?
+                  "Unbox your first monsters" :
+                  "Login with Metamask"
+              }
             </Button>
           </LinkContainer>
         </Row>
@@ -64,7 +68,8 @@ const Home = () => {
 
 const mapStateToProps = state => {
   return {
-    account: state.accounts[0]
+    account: state.accounts[0],
+    isLoaded: state.drizzleStatus.initialized
   }
 }
 
