@@ -1,10 +1,10 @@
 import React from "react"
-import { Grid, Col, Row, Image } from "react-bootstrap"
+import { Grid, Row, Image } from "react-bootstrap"
 
 const AboutUs = () => {
   return (
     <Grid fluid className = { "about-us"}>
-      <Row className = { "image" }/>
+      <Image src = { require("../assets/images/team.jpg") } responsive/>
       <Grid fluid className = { "margin" }>
         <Row>
         <h1>About Us</h1>
