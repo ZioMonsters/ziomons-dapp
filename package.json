@@ -37,5 +37,9 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@soluzioni-futura/sf-gulp-deployer": "^1.0.1",
+    "gulp": "^3.9.1"
   }
 }
