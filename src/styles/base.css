@@ -6039,7 +6039,10 @@ img {
   font-size: 60px; }
 
 .home .info {
+  margin: 70px 10% 0 10%;
   text-align: center; }
+  .home .info .about-us {
+    margin-top: 70px; }
 
 .home .btn.btn-default {
   color: #160081;
@@ -6051,9 +6054,6 @@ img {
     background: #160081;
     color: #FFF;
     transition: all .3s; }
-
-.home .well {
-  border-radius: 0; }
 
 .content {
   font-family: "Montserrat medium", sans-serif;
