@@ -6041,13 +6041,19 @@ img {
 .home .info {
   text-align: center; }
 
-.home .test {
+.home .btn.btn-default {
   color: #160081;
-  border: 3px solid #160081; }
-  .home .test:hover {
+  border: 3px solid #160081;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
+  .home .btn.btn-default:hover {
     background: #160081;
     color: #FFF;
     transition: all .3s; }
+
+.home .well {
+  border-radius: 0; }
 
 .content {
   font-family: "Montserrat medium", sans-serif;
