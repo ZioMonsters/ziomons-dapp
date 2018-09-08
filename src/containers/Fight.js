@@ -47,9 +47,10 @@ class Fight extends Component {
 
   fight = () => {
     if (this.state.team.length === 5) {
-       return fight({ team: this.state.team, minBet: 0, bet: 10 })
+       return fight(this.state.team, 0, 0)
          .then(console.log)
          .catch(console.error)
+        //{ team: this.state.team, minBet: 0, bet: 10 }
     }
   }
 
