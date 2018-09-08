@@ -2,7 +2,7 @@ import fetch from "node-fetch"
 
 import { apiUrl } from "../config.json"
 
-export const getMonsters = (address, limit) => {
+export const listMonsters = (address, limit) => {
   const params = {
     address,
     limit
@@ -10,7 +10,15 @@ export const getMonsters = (address, limit) => {
 
   return fetch(`${apiUrl}/listMonsters?params=${JSON.stringify(params)}`)
 }
-  
+
+export const getMonster = id => {
+  const params = {
+    monsterId: id
+  }
+
+  return fetch(`${apiUrl}/getMonster?params=${JSON.stringify(params)}`)
+}
+
   /*return Promise.resolve(
     [
       {
