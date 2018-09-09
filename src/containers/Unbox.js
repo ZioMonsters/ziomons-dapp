@@ -1,13 +1,17 @@
+//Node modules
 import React, { Component } from "react"
 import { Row, Col, Image, Grid } from "react-bootstrap"
 import { drizzleConnect } from "drizzle-react"
 import PropTypes from "prop-types"
+
+//Assets
 import maxi from "../assets/packs/maxi.jpg"
 import plus from "../assets/packs/plus.jpg"
 import standard from "../assets/packs/standard.jpg"
 
+//Pack prices
 const values = {
-  standard: 2,
+  standard: 2500000000000000,
   plus: 5,
   maxi: 8
 }
@@ -20,12 +24,11 @@ class Unbox extends Component {
   constructor(props, context) {
     super(props)
     this.contract = context.drizzle.contracts.CryptoMon
-    console.log('contract',this.contract)
   }
 
   unbox = pack => {
-    const { address } = this.props
-    this.contract.methods.unbox.cacheSend({ from: address, value: values[pack], gas: 1055638*5 })
+    const { account } = this.props
+    this.contract.methods.unbox.cacheSend({ from: account, value: values[pack], gas: 1055638*5 })
   }
 
   render() {
