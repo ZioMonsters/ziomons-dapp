@@ -6076,10 +6076,10 @@ button.close {
 .content .margin {
   margin-left: 25%;
   margin-right: 25%; }
-  @media only screen {
+  @media only screen and (orientation: portrait) {
     .content .margin {
-      margin-left: 0;
-      margin-right: 0; } }
+      margin-left: 7%;
+      margin-right: 7%; } }
   .content .margin p {
     line-height: 2; }
 

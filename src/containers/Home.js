@@ -27,7 +27,7 @@ const Home = ({ isLoaded }) => {
           isLoaded ?
             <LinkContainer to = {"/unbox" }>
               <Button className = { "cryptomon-button" }>Unbox your first monsters</Button>
-            </LinkContainer> : <Button className = { "cryptomon-button fixed" }>Login with Metamask on Rinkeby testnet</Button>
+            </LinkContainer> : <Button className = { "cryptomon-button fixed" } style = {{ width: "100%" }}>Login with Metamask on Rinkeby testnet</Button>
         }
       </Row>
       <Row className = { "features" }>

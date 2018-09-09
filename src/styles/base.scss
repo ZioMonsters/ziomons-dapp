@@ -26,12 +26,12 @@ $icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 
 .content {
   .margin {
+    @media only screen and (orientation: portrait) {
+      margin-left: 7%;
+      margin-right: 7%;
+    }
     margin-left: 25%;
     margin-right: 25%;
-    @media only screen {
-      margin-left: 0;
-      margin-right: 0;
-    }
 
     p {
       line-height: 2;

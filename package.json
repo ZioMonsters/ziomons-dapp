@@ -1,6 +1,6 @@
 {
   "name": "cryptomon-dapp",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "private": true,
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "@soluzioni-futura/sf-gulp-deployer": "^1.0.1",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "svg-react-loader": "^0.4.5"
   }
 }
