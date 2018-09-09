@@ -6083,11 +6083,16 @@ img {
 .content .margin {
   margin-left: 25%;
   margin-right: 25%; }
+  @media only screen {
+    .content .margin {
+      margin-left: 0;
+      margin-right: 0; } }
   .content .margin p {
     line-height: 2; }
 
 .btn.btn-default.cryptomon-button {
   border: 3px solid #160081;
+  width: 200px;
   margin-bottom: 70px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
