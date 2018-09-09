@@ -38,6 +38,7 @@ class Unbox extends Component {
           <Col md = { 4 }>
             <Image
               src = { standard }
+              className = { "pack" }
               responsive
               onClick = { () => this.unbox("standard") }
             />
@@ -45,6 +46,7 @@ class Unbox extends Component {
           <Col md = { 4 }>
             <Image
               src = { plus }
+              className = { "pack" }
               responsive
               onClick = { () => this.unbox("plus") }
             />
@@ -52,6 +54,7 @@ class Unbox extends Component {
           <Col md = { 4 }>
             <Image
               src = { maxi }
+              className = { "pack" }
               responsive
               onClick = { () => this.unbox("maxi") }
             />
