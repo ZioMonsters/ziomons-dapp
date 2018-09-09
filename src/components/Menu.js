@@ -5,24 +5,19 @@ import { Link } from "react-router-dom"
 
 const Menu = () =>
   <Row className = { "menu" }>
-    <Col sm = { 3 }  md = { 3 }>
+    <Col sm = { 4 }>
       <Link to = { "/fight" } className = { "fight" }>
         Fight
       </Link>
     </Col>
-    <Col sm = { 3 } md = { 3 }>
+    <Col sm = { 4 }>
       <Link to = { "/unbox" } className = { "unbox" }>
         Unbox
       </Link>
     </Col>
-    <Col sm = { 3 } md = { 3 }>
+    <Col sm = { 4 }>
       <Link to = { "/market" } className = { "market" }>
         Market
-      </Link>
-    </Col>
-    <Col sm = { 3 } md = { 3 }>
-      <Link to = { "/withdraw" } className = { "withdraw" }>
-        Withdraw
       </Link>
     </Col>
   </Row>

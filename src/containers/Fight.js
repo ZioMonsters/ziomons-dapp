@@ -54,10 +54,10 @@ class Fight extends Component {
       rows.push(monsters.slice(i, i + monstersPerRow))
     }
     return (
-      <Grid fluid>
+      <Grid fluid style = {{ "padding-top": "50px" }}>
         <Col className = { "monsters-selector" } md = { 6 }>
           <Grid fluid>
-            <Row><h1 className = { "text-center" }><strong>Team selector:</strong></h1></Row>
+            <Row><h1 className = { "text-center" } ><strong>Team selector:</strong></h1></Row>
             {
               rows.map((row, rowNumber) => 
                 <Row>

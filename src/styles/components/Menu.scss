@@ -5,51 +5,43 @@
     text-align: center;
     padding-top: 50px;
     a {
-      padding: 10% 40%;
+      padding: 5% 40%;
       //border-radius: 10px;
       text-align: center;
       width: 40%;
       text-transform: uppercase;
       font-weight: bold;
+      font-size: 20px;
       &:hover {
         text-decoration: none;
       }
 
       &.fight {
         &:hover {
-          background: $fight-color;
+          background: $primary-color;
           color: #FFF;
           transition: all .3s;
         }
-        color: $fight-color;
-        border: 3px solid $fight-color;
+        color: $primary-color;
+        border: 3px solid $primary-color;
       }
       &.unbox {
         &:hover {
-          background: $unbox-color;
+          background: $primary-color;
           color: #FFF;
           transition: all .3s;
         }
-        color: $unbox-color;
-        border: 3px solid $unbox-color;
+        color: $primary-color;
+        border: 3px solid $primary-color;
       }
       &.market {
         &:hover {
-          background: $market-color;
+          background: $primary-color;
           color: #FFF;
           transition: all .3s;
         }
-        color: $market-color;
-        border: 3px solid $market-color;
-      }
-      &.withdraw {
-        &:hover {
-          background: $withdraw-color;
-          color: #FFF;
-          transition: all .3s;
-        }
-        color: $withdraw-color;
-        border: 3px solid $withdraw-color;
+        color: $primary-color;
+        border: 3px solid $primary-color;
       }
     }
   }
