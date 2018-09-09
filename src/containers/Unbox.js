@@ -11,9 +11,9 @@ import standard from "../assets/packs/standard.jpg"
 
 //Pack prices
 const values = {
-  standard: 2500000000000000,
-  plus: 5,
-  maxi: 8
+  standard: 2500,
+  plus: 12500,
+  maxi: 37500
 }
 
 class Unbox extends Component {
@@ -27,8 +27,13 @@ class Unbox extends Component {
   }
 
   unbox = pack => {
+<<<<<<< HEAD
     const { account } = this.props
     this.contract.methods.unbox.cacheSend({ from: account, value: values[pack], gas: 1055638*5 })
+=======
+    const { address } = this.props
+    this.contract.methods.unbox.cacheSend({ from: address, value: values[pack] * (10**12), gas: 1055638*5 })
+>>>>>>> 5661e5d00eb719c47a4069b2d56a8bf194198f9c
   }
 
   render() {

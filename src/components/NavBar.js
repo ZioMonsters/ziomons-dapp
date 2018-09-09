@@ -4,15 +4,35 @@ import logo from "../assets/logo/logo.png"
 import { drizzleConnect } from "drizzle-react"
 import { withRouter } from "react-router-dom"
 import { LinkContainer } from "react-router-bootstrap"
+const { apiUrl } = require("../config.json")
 
 class NavBar extends Component {
+  state = {
+    newPlayer: true
+  }
+
+  UNSAFE_componentWillReceiveProps({ isLoaded, account }) {
+    if (isLoaded !== this.props.isLoaded) {
+      const query = {
+        limit: 1,
+        address: account
+      }
+      return fetch(`${apiUrl}/listMonsters?params=${JSON.stringify(query)}`)
+        .then(res => res.json())
+        .then(({ count }) => {
+          if (count) {
+            this.setState({ newPlayer: false })
+          }
+        })
+    }
+  }
   render() {
     const { account, balance, location: { pathname }, isLoaded } = this.props
     return (
       <Navbar className = { pathname.split("/")[1] }>
         <Navbar.Header>
           <Navbar.Brand>
-            <LinkContainer to = { "/" }>
+            <LinkContainer to = { this.state.newPlayer ? "/" : "/user" }>
               <img src = { logo } />
             </LinkContainer>
           </Navbar.Brand>

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 let monsterImage
 const Home = ({ isLoaded }) => {
   if (typeof monsterImage === "undefined") {
-    monsterImage = require(`../assets/monsters/${new Date().getTime() % 18}.svg`)
+    monsterImage = require(`../assets/monsters/${new Date().getTime() % 21}.svg`)
   }
   return (
     <Grid fluid className = { "home margin" }>
