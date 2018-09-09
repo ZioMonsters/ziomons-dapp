@@ -2,7 +2,11 @@
   text-align: center; }
   .home h1 {
     margin-top: 20px;
-    text-align: center; }
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 15px; }
+  .home li {
+    font-size: 17px; }
   .home .features {
     font-size: 17.5px;
     text-align: left; }

@@ -1,11 +1,15 @@
+//Node modules
 import React, { Component } from "react"
 import { Row, Col, Image, Grid } from "react-bootstrap"
 import { drizzleConnect } from "drizzle-react"
 import PropTypes from "prop-types"
+
+//Assets
 import maxi from "../assets/packs/maxi.jpg"
 import plus from "../assets/packs/plus.jpg"
 import standard from "../assets/packs/standard.jpg"
 
+//Pack prices
 const values = {
   standard: 2500,
   plus: 12500,
@@ -20,7 +24,6 @@ class Unbox extends Component {
   constructor(props, context) {
     super(props)
     this.contract = context.drizzle.contracts.CryptoMon
-    console.log('contract',this.contract)
   }
 
   unbox = pack => {
@@ -31,7 +34,6 @@ class Unbox extends Component {
   render() {
     return (
       <Grid className = { "unbox" }>
-        <h1>Unbox</h1>
         <Row>
           <Col md = { 4 }>
             <Image

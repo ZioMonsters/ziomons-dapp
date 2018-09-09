@@ -24,14 +24,12 @@ class MonsterPage extends Component {
   render() {
     console.log(this.state.monster)
     return(
-      <Grid fluid>
-        <Col md = { 4 }>
+      <div >
+        <Col md = { 6 } className = { "text-right" } >
           <Image src = { placeholder } />
         </Col>
-        <Col md = { 2 }><h1>{ this.state.monster.attack }</h1></Col>
-        <Col md = { 2 }><h1>{ this.state.monster.defense }</h1></Col>
-        <Col md = { 2 }><h1>{ this.state.monster.speed }</h1></Col>
-      </Grid>
+        <Col md = { 6 }><h1>{ this.state.monster.attack }<br/>{ this.state.monster.defense }<br/>{ this.state.monster.speed }</h1></Col>
+      </div>
     )
   } 
 }

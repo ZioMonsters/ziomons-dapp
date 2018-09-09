@@ -5,16 +5,16 @@
   background-color: #160081; }
   .navbar.unbox {
     transition: all 1s;
-    background-color: #ff82e8; }
+    background-color: #160081; }
   .navbar.fight {
     transition: all 1s;
-    background-color: #ff827c; }
+    background-color: #160081; }
   .navbar.market {
     transition: all 1s;
-    background-color: #44e293; }
+    background-color: #160081; }
   .navbar.withdraw {
     transition: all 1s;
-    background-color: #f7bd55; }
+    background-color: #160081; }
   .navbar span, .navbar a {
     color: #FFF !important; }
   .navbar .user-info a {
@@ -27,6 +27,11 @@
   .navbar .navbar-header .navbar-brand {
     padding-top: 0;
     cursor: pointer; }
+  .navbar img {
+    cursor: pointer;
+    transition: all .2s ease-in-out; }
+    .navbar img:hover {
+      transform: scale(1.3); }
   .navbar .dropdown {
     height: 75px; }
     .navbar .dropdown a {

@@ -9,13 +9,7 @@ import NotificationsContext from "../components/NotificationsContext"
 const options = {
   contracts: [
     CryptoMon
-  ],
-  events: {
-    CryptoMon: [
-      'Unboxed'
-    ]
-  },
-  syncAlways: true
+  ]
 }
 
 

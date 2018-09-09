@@ -6,12 +6,11 @@
 
   img {
     cursor: pointer;
-    padding: 0 50px;
 
     transition: all .2s ease-in-out;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(0.9);
     }
   }
 }
