@@ -5892,6 +5892,8 @@ button.close {
       border-radius: 0;
       min-height: 300px;
       min-width: 250px; }
+  .navbar li a {
+    line-height: 45px; }
 
 .menu div {
   text-align: center; }
@@ -6047,6 +6049,7 @@ button.close {
   .home li {
     font-size: 17px; }
   .home .features {
+    font-size: 17.5px;
     text-align: left; }
   .home .quote a {
     color: grey;
@@ -6054,8 +6057,6 @@ button.close {
   .home .info {
     margin: 70px 10% 0 10%;
     text-align: center; }
-    .home .info .about-us {
-      margin-top: 70px; }
 
 .the-game {
   text-align: center; }

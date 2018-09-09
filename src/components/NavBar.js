@@ -36,7 +36,23 @@ class NavBar extends Component {
               <img src = { logo } />
             </LinkContainer>
           </Navbar.Brand>
+          <Navbar.Toggle />
         </Navbar.Header>
+        <Navbar.Collapse>
+        {
+          this.state.newPlayer &&
+          <Nav>
+            <LinkContainer to = { "/the-game" }>
+              <NavItem>The game</NavItem>
+            </LinkContainer>
+            <LinkContainer to = { "/about-us" }>
+              <NavItem>About us</NavItem>
+            </LinkContainer>
+            <LinkContainer to = { "/tech" }>
+              <NavItem>Tech</NavItem>
+            </LinkContainer>
+          </Nav>
+        }
         {
           isLoaded &&
           <Nav pullRight>
@@ -46,6 +62,7 @@ class NavBar extends Component {
             </NavItem>
           </Nav>
         }
+        </Navbar.Collapse>
       </Navbar>
     )
   }
