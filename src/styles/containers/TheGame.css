@@ -1,5 +1,11 @@
 .the-game {
   text-align: center; }
+  .the-game h1 {
+    font-weight: bold;
+    padding-top: 20px; }
+  .the-game h3 {
+    font-weight: bold;
+    padding-top: 20px; }
   .the-game p {
     line-height: 2;
     text-align: justify; }

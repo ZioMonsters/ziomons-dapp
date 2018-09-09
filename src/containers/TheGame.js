@@ -26,7 +26,7 @@ const TheGame = () => {
         <ReactSVG src = { require(`../assets/monsters/${(new Date().getTime() + 2) % 21}.svg`) } />
       </Row>
       <Row>
-        <h3>Match Rule</h3>
+        <h3>Match Rules</h3>
         <p>
           Every user place a minumun bet on which the system won’t match other player and a maximun (higher than the minimum one) bet on which the system won’t match him above. When the user want to start a fight, the system will match him with another one that has placed the maximum value between the maximum value and minimum value of the first player. The user that has placed the greater minimum bet recieves back the difference between the two minimun bet.
           <h4>For Example</h4>
@@ -46,7 +46,7 @@ const TheGame = () => {
         <ReactSVG src = { require(`../assets/monsters/${(new Date().getTime() + 4) % 21}.svg`) } />
       </Row>
       <Row>
-        <h3>Combat rule</h3>
+        <h3>Combat rules</h3>
         <p>
           Two team of 5 ziomons fight with each other. Each ziomons has its own attribute of speed, attack and defense. At the beginning of the fight the first ziomon encounters the first one owned by the second player and the battle begins. The one that has the highest value of speed is the attacker, the other one is considered the defender. If the attacker’s attack value is higher than the defender’s defense value, the attacker has won, otherwise he has lost the battle and the defender has won. Then it is the turn of the second ziomons and the whole process is repeated until all the ziomons have fight in their own battle. The team that wins the most battles is considered the winner and gains the bet.
 

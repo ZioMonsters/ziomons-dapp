@@ -1,2 +1,7 @@
 .about-us .team {
   margin: 0px; }
+
+.about-us h1 {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold; }

@@ -3,6 +3,10 @@
   margin-bottom: 50px; }
 
 .unbox .pack {
+  width: 70%;
+  height: 70%;
+  text-align: center;
+  padding-top: 10vh;
   cursor: pointer;
   transition: all .2s ease-in-out; }
   .unbox .pack:hover {

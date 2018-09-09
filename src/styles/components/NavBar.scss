@@ -5,6 +5,7 @@
   border-radius: 0;
   border: none;
   background-color: $primary-color;
+  margin-bottom: 0px;
 
   &.unbox {
     transition: all 1s;
@@ -72,9 +73,23 @@
     }
   }
 
+  .navbar-collapse {
+    li {
+      background-color: $hover-color;
+      a { 
+        background-color: $primary-color;
+      }
+    }
+    li.current {
+      background: #FFFFFF;
+    }
+  }
+
   li {
     a {
       line-height: 45px;
     }
+
+
   }
 }

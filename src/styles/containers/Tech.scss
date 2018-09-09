@@ -1,6 +1,10 @@
 @import "../variables";
 
 .tech {
+  h1 {
+    font-weight: bold;
+    text-align: center;
+  }
   p {
     line-height: 2;
     text-align: justify;

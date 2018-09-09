@@ -43,7 +43,7 @@ class NavBar extends Component {
           this.state.newPlayer &&
           <Nav>
             <LinkContainer to = { "/the-game" }>
-              <NavItem>The game</NavItem>
+              <NavItem>The Game</NavItem>
             </LinkContainer>
             <LinkContainer to = { "/about-us" }>
               <NavItem>About us</NavItem>
