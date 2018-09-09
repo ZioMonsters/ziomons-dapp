@@ -36,7 +36,9 @@ class NavBar extends Component {
               <img src = { logo } />
             </LinkContainer>
           </Navbar.Brand>
+          <Navbar.Toggle />
         </Navbar.Header>
+        <Navbar.Collapse>
         {
           this.state.newPlayer &&
           <Nav>
@@ -60,6 +62,7 @@ class NavBar extends Component {
             </NavItem>
           </Nav>
         }
+        </Navbar.Collapse>
       </Navbar>
     )
   }

@@ -35,3 +35,5 @@
       border-radius: 0;
       min-height: 300px;
       min-width: 250px; }
+  .navbar li a {
+    line-height: 45px; }
