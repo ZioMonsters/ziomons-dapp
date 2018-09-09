@@ -8,19 +8,19 @@
 
   &.unbox {
     transition: all 1s;
-    background-color: $unbox-color;
+    background-color: $primary-color;
   }
   &.fight {
     transition: all 1s;
-    background-color: $fight-color;
+    background-color: $primary-color;
   }
   &.market {
     transition: all 1s;
-    background-color: $market-color;
+    background-color: $primary-color;
   }
   &.withdraw {
     transition: all 1s;
-    background-color: $withdraw-color;
+    background-color: $primary-color;
   }
 
   span, a {
@@ -45,6 +45,16 @@
     .navbar-brand {
       padding-top: 0;
       cursor: pointer;
+    }
+  }
+
+  img {
+    cursor: pointer;
+
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.3);
     }
   }
 

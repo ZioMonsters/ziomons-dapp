@@ -12,7 +12,7 @@ const Home = ({ isLoaded }) => {
   }
   return (
     <Grid fluid className = { "home margin" }>
-      <h1>Welcome to Ziomons</h1>
+      <h1><strong>Welcome to Ziomons</strong></h1>
       <Row>
         <ReactSVG src = { monsterImage } />
       </Row>
@@ -27,11 +27,11 @@ const Home = ({ isLoaded }) => {
           isLoaded ?
             <LinkContainer to = {"/unbox" }>
               <Button className = { "cryptomon-button" }>Unbox your first monsters</Button>
-            </LinkContainer> : <Button className = { "cryptomon-button fixed" }>Login with Metamask on Rinkeby blockchain</Button>
+            </LinkContainer> : <Button className = { "cryptomon-button fixed" }>Login with Metamask on Rinkeby testnet</Button>
         }
       </Row>
       <Row className = { "features" }>
-        <h3>How does it work</h3>
+        <h3 className = { "text-center" }><strong>How does it work</strong></h3>
         <ul>
           <li>Purchase a Ziomons blister and unpack your ZM to setup a team</li>
           <li>Look for a challenger: place your bet and match with another trainer! Your ZM will fight and the winner recieves a prize propotioned to the bet made.</li>

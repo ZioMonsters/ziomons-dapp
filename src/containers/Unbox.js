@@ -27,19 +27,13 @@ class Unbox extends Component {
   }
 
   unbox = pack => {
-<<<<<<< HEAD
-    const { account } = this.props
-    this.contract.methods.unbox.cacheSend({ from: account, value: values[pack], gas: 1055638*5 })
-=======
     const { address } = this.props
     this.contract.methods.unbox.cacheSend({ from: address, value: values[pack] * (10**12), gas: 1055638*5 })
->>>>>>> 5661e5d00eb719c47a4069b2d56a8bf194198f9c
   }
 
   render() {
     return (
       <Grid className = { "unbox" }>
-        <h1>Unbox</h1>
         <Row>
           <Col md = { 4 }>
             <Image
