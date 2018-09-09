@@ -10,8 +10,8 @@ const TheGame = () => {
       <Row>
         <h1>The Game</h1>
         <p>
-          The core of ziomons is divided in two: trade (coming soon) and fighting. All ziomons are tradable and can fight with other ziomons.
-          The value of the ziomon on the market is determined by its rarity and its level. There are 4 different types of rarity: common, not common, rare and legendary. The rarity of the ziomons influences the stats, in fact, the higher the rarity of the ziomons is, the better the stats are.
+          The core of Ziomons is divided in two parts: trading (coming soon) and fighting. All ZMs are tradable and can fight against each other.
+          The value of a ZM on the market is determined by its rarity and its level. There are 4 different rarities: common, uncommon, rare and legendary. A ZM’s rarity influences its stats, in fact, the higher the rarity of a ZM is, the better the its stats are.
         </p>
       </Row>
       <Row>

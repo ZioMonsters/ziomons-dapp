@@ -18,7 +18,7 @@ const Home = ({ isLoaded }) => {
       </Row>
       <Row className = { "quote" }>
         <blockquote>
-          <p>"Ziomons is a ETH blockchain based game which uses ERC721 (NFT) tokens that allows you to fight other Ziomons trainer worldwide. Bet your ETH on your fights and grow your ETH pfolio!"</p>
+          <p>"Ziomons is a ETH blockchain based game which uses ERC721 (NFT) tokens. You will be able to train your Ziomons and fight other trainers worldwide. Bet your ETH on your fights and win!"</p>
           <footer><cite>A game made by <Link to = { "/about-us" }>kids</Link> but NOT for kids</cite></footer>
         </blockquote>
       </Row>
@@ -33,9 +33,9 @@ const Home = ({ isLoaded }) => {
       <Row className = { "features" }>
         <h3 className = { "text-center" }><strong>How does it work</strong></h3>
         <ul>
-          <li>Purchase a Ziomons blister and unpack your ZM to setup a team</li>
-          <li>Look for a challenger: place your bet and match with another trainer! Your ZM will fight and the winner recieves a prize propotioned to the bet made.</li>
-          <li>Train your ZM to make them stronger on the battlefield</li>
+          <li>Purchase a Ziomons card pack and unbox it to build your team</li>
+          <li>Look for an opponent: place your bet and get matched with another trainer! Your ZM will fight and the winner will receive a prize proportioned to the bet made</li>
+          <li>Train your ZMs to make them stronger on the battlefield</li>
           <li>Arrange your team to be able to win all battles!</li>
         </ul>
       </Row>
