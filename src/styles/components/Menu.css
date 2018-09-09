@@ -1,10 +1,12 @@
 .menu div {
-  text-align: center; }
+  text-align: center;
+  padding-top: 50px; }
   .menu div a {
     padding: 10% 40%;
     text-align: center;
     width: 40%;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: bold; }
     .menu div a:hover {
       text-decoration: none; }
     .menu div a.fight {
