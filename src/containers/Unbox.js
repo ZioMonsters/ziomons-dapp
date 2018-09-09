@@ -7,9 +7,9 @@ import plus from "../assets/packs/plus.jpg"
 import standard from "../assets/packs/standard.jpg"
 
 const values = {
-  standard: 2,
-  plus: 5,
-  maxi: 8
+  standard: 2500,
+  plus: 12500,
+  maxi: 37500
 }
 
 class Unbox extends Component {
@@ -25,7 +25,7 @@ class Unbox extends Component {
 
   unbox = pack => {
     const { address } = this.props
-    this.contract.methods.unbox.cacheSend({ from: address, value: values[pack], gas: 1055638*5 })
+    this.contract.methods.unbox.cacheSend({ from: address, value: values[pack] * (10**12), gas: 1055638*5 })
   }
 
   render() {
