@@ -5893,12 +5893,22 @@ button.close {
       border-radius: 0;
       min-height: 300px;
       min-width: 250px; }
-  .navbar .navbar-collapse li {
-    background-color: #7E6DD1; }
-    .navbar .navbar-collapse li a {
-      background-color: #160081; }
-  .navbar .navbar-collapse li.current {
-    background: #FFFFFF; }
+  .navbar .navbar-toggle {
+    background-color: transparent;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; }
+  .navbar .navbar-collapse {
+    border: none; }
+    .navbar .navbar-collapse li {
+      border: none;
+      text-align: center;
+      background-color: #7E6DD1; }
+      .navbar .navbar-collapse li a {
+        background-color: #160081; }
+    .navbar .navbar-collapse li.current {
+      background: #FFFFFF; }
   .navbar li a {
     line-height: 45px; }
 
@@ -6036,8 +6046,7 @@ button.close {
   .home h1 {
     margin-top: 20px;
     text-align: center;
-    font-size: 50px;
-    padding-bottom: 15px; }
+    font-size: 50px; }
   .home li {
     font-size: 17px; }
   .home .features {
@@ -6092,8 +6101,8 @@ button.close {
 
 .btn.btn-default.cryptomon-button {
   border: 3px solid #160081;
-  width: 200px;
-  margin-bottom: 70px;
+  width: 100%;
+  margin-bottom: 20px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0; }

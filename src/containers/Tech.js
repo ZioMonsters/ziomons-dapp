@@ -1,5 +1,6 @@
 import React from "react"
-import { Grid, Row, Col } from "react-bootstrap"
+import { Grid, Row, Col, Button } from "react-bootstrap"
+import { LinkContainer } from "react-router-bootstrap"
 
 const Tech = () => {
   return (
@@ -18,6 +19,11 @@ const Tech = () => {
           The application is hosted under https://ziomons.soluzionifutura.it/ and every one that has wallet can play with it so build your own team, fight with other and collect the most valuable team on the market!
         </p>
       </Row>
+      <LinkContainer exact to = { "/" } >
+        <Button className = { "cryptomon-button" }>
+          Torna alla home
+        </Button>
+      </LinkContainer>
     </Grid>
   )
 }

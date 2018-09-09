@@ -73,8 +73,19 @@
     }
   }
 
+  .navbar-toggle {
+    background-color: transparent;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+
   .navbar-collapse {
+    border: none;
     li {
+      border: none;
+      text-align: center;
       background-color: $hover-color;
       a { 
         background-color: $primary-color;

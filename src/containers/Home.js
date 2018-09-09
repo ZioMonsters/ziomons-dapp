@@ -39,7 +39,7 @@ const Home = ({ isLoaded }) => {
           <li>Arrange your team to be able to win all battles!</li>
         </ul>
       </Row>
-      <Row className = {"info"}>
+      <Row>
         <Col md = { 4 }>
           <LinkContainer exact to = {"/the-game"}>
             <Button className = { "cryptomon-button" }>

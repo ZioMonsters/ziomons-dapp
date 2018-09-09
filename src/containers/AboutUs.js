@@ -1,5 +1,6 @@
 import React from "react"
-import { Grid, Row, Image } from "react-bootstrap"
+import { Grid, Row, Image, Button } from "react-bootstrap"
+import { LinkContainer } from "react-router-bootstrap"
 
 const AboutUs = () => {
   return (
@@ -18,6 +19,11 @@ const AboutUs = () => {
             Ziomons runs on an off chain serverless infrastructure based on AWS Lambda and some other AWS SaaS.
           </p>
         </Row>
+        <LinkContainer exact to = { "/" } >
+          <Button className = { "cryptomon-button" }>
+            Torna alla home
+          </Button>
+        </LinkContainer>
       </Grid>
     </div>
   )

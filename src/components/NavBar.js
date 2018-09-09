@@ -29,7 +29,7 @@ class NavBar extends Component {
   render() {
     const { account, balance, location: { pathname }, isLoaded } = this.props
     return (
-      <Navbar className = { pathname.split("/")[1] }>
+      <Navbar className = { pathname.split("/")[1] } collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
             <LinkContainer to = { this.state.newPlayer ? "/" : "/user" }>
