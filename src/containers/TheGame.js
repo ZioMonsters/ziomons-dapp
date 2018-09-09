@@ -2,6 +2,8 @@ import React from "react"
 import { Grid, Row, Button, Image } from "react-bootstrap"
 import { LinkContainer } from "react-router-bootstrap"
 import ReactSVG from "react-svg"
+import MonsterSvg from "../components/MonsterSvg.js"
+
 const TheGame = () => {
   return (
     <Grid fluid className = {"the-game margin"}>
@@ -13,7 +15,7 @@ const TheGame = () => {
         </p>
       </Row>
       <Row>
-        <ReactSVG src = { require(`../assets/monsters/${(new Date().getTime() + 1) % 21}.svg`) } svgClassName = { "svg-monster-1" }/>
+        <MonsterSvg url = {require(`../assets/monsters/${(new Date().getTime() + 1) % 21}.svg`)} />
       </Row>
       <Row>
         <h3>Unpacking rules</h3>
@@ -22,7 +24,7 @@ const TheGame = () => {
         </p>
       </Row>
       <Row>
-        <ReactSVG src = { require(`../assets/monsters/${(new Date().getTime() + 2) % 21}.svg`) } svgClassName = { "svg-monster-2" }/>
+        <MonsterSvg url = {require(`../assets/monsters/${(new Date().getTime() + 2) % 21}.svg`)} />
       </Row>
       <Row>
         <h3>Match Rules</h3>
@@ -33,7 +35,7 @@ const TheGame = () => {
         </p>
       </Row>
       <Row>
-        <ReactSVG src = { require(`../assets/monsters/${(new Date().getTime() + 3) % 21}.svg`) } svgClassName = { "svg-monster-3" } />
+        <MonsterSvg url = {require(`../assets/monsters/${(new Date().getTime() + 3) % 21}.svg`)} />
       </Row>
       <Row>
         <h3>Experience gain</h3>
@@ -42,7 +44,7 @@ const TheGame = () => {
         </p>
       </Row>
       <Row>
-        <ReactSVG src = { require(`../assets/monsters/${(new Date().getTime() + 4) % 21}.svg`) } svgClassName = { "svg-monster-4" }/>
+        <MonsterSvg url = {require(`../assets/monsters/${(new Date().getTime() + 4) % 21}.svg`)} />
       </Row>
       <Row>
         <h3>Combat rules</h3>

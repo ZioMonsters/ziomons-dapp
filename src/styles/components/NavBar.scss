@@ -79,10 +79,14 @@
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
+    top: 15px;
   }
 
   .navbar-collapse {
     border: none;
+    ul {
+      margin-top: 0;
+    }
     li {
       border: none;
       text-align: center;

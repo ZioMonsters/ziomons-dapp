@@ -5898,9 +5898,12 @@ button.close {
     border: none;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
-    border-radius: 0; }
+    border-radius: 0;
+    top: 15px; }
   .navbar .navbar-collapse {
     border: none; }
+    .navbar .navbar-collapse ul {
+      margin-top: 0; }
     .navbar .navbar-collapse li {
       border: none;
       text-align: center;

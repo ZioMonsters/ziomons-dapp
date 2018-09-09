@@ -11,6 +11,22 @@ class NavBar extends Component {
     newPlayer: true
   }
 
+  componentDidMount() {
+    if (this.props.isLoaded) {
+      const query = {
+        limit: 1,
+        address: this.props.account
+      }
+      return fetch(`${apiUrl}/listMonsters?params=${JSON.stringify(query)}`)
+        .then(res => res.json())
+        .then(({ count }) => {
+          if (count) {
+            this.setState({ newPlayer: false })
+          }
+        })
+    }
+  }
+
   UNSAFE_componentWillReceiveProps({ isLoaded, account }) {
     if (isLoaded !== this.props.isLoaded) {
       const query = {
