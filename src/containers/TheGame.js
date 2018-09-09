@@ -14,7 +14,7 @@ const TheGame = () => {
         </p>
       </Row>
       <Row>
-        <ReactSVG src = { require("../assets/monsters/1.svg" ) } />
+        <ReactSVG src = { require(`../assets/monsters/${(new Date().getTime() + 1) % 21}.svg`) } />
       </Row>
       <Row>
         <h3>Unpacking rules</h3>
@@ -23,7 +23,7 @@ const TheGame = () => {
         </p>
       </Row>
       <Row>
-        <ReactSVG src = { require("../assets/monsters/2.svg" ) } />
+        <ReactSVG src = { require(`../assets/monsters/${(new Date().getTime() + 2) % 21}.svg`) } />
       </Row>
       <Row>
         <h3>Match Rule</h3>
@@ -34,7 +34,7 @@ const TheGame = () => {
         </p>
       </Row>
       <Row>
-        <ReactSVG src = { require("../assets/monsters/3.svg" ) } />
+        <ReactSVG src = { require(`../assets/monsters/${(new Date().getTime() + 3) % 21}.svg`) } />
       </Row>
       <Row>
         <h3>Experience gain</h3>
@@ -43,7 +43,7 @@ const TheGame = () => {
         </p>
       </Row>
       <Row>
-          <ReactSVG src = { require("../assets/monsters/4.svg" ) } />
+        <ReactSVG src = { require(`../assets/monsters/${(new Date().getTime() + 4) % 21}.svg`) } />
       </Row>
       <Row>
         <h3>Combat rule</h3>

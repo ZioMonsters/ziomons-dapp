@@ -38,6 +38,20 @@ class NavBar extends Component {
           </Navbar.Brand>
         </Navbar.Header>
         {
+          this.state.newPlayer &&
+          <Nav>
+            <LinkContainer to = { "/the-game" }>
+              <NavItem>The game</NavItem>
+            </LinkContainer>
+            <LinkContainer to = { "/about-us" }>
+              <NavItem>About us</NavItem>
+            </LinkContainer>
+            <LinkContainer to = { "/tech" }>
+              <NavItem>Tech</NavItem>
+            </LinkContainer>
+          </Nav>
+        }
+        {
           isLoaded &&
           <Nav pullRight>
             <NavItem className = { "user-info" }>

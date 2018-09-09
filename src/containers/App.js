@@ -5,6 +5,7 @@ import { Switch, withRouter } from "react-router-dom"
 import Routes from "./Routes.js"
 import { CSSTransition, TransitionGroup } from "react-transition-group"
 import v4 from "uuid/v4"
+import ScrollToTop from "../components/ScrollToTop.js"
 
 class App extends Component {
   render() {
@@ -19,16 +20,14 @@ class App extends Component {
       //    unmountOnExit={true}
       //  >
           <div className="App">
-            {
-              [
-                <NavBar />,
-                <div className = { "content" }>
-                  <Switch>
-                    <Routes />
-                  </Switch>
-                </div>
-              ]
-            }
+            <ScrollToTop>
+              <NavBar />
+              <div className = { "content" }>
+                <Switch>
+                  <Routes />
+                </Switch>
+              </div>
+            </ScrollToTop>
           </div>
       //   </CSSTransition>
       // </TransitionGroup>
