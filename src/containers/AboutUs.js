@@ -3,8 +3,8 @@ import { Grid, Row, Image } from "react-bootstrap"
 
 const AboutUs = () => {
   return (
-    <Grid fluid className = { "about-us"}>
-      <Image src = { require("../assets/images/team.jpg") } responsive/>
+    <div className = { "about-us" }>
+      <Image src = { require("../assets/images/team.jpg") } className = { "team" } responsive/>
       <Grid fluid className = { "margin" }>
         <Row>
         <h1>About Us</h1>
@@ -19,7 +19,7 @@ const AboutUs = () => {
           </p>
         </Row>
       </Grid>
-    </Grid>
+    </div>
   )
 }
 
